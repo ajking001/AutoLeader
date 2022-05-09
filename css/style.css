@@ -1197,7 +1197,7 @@ h1, h2, h3, h4, h5,
   animation-direction: alternate-reverse;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  color: rgba(0, 85, 255, 0.597);
+  color: blue;
   position: absolute;
   top: 50%;
   left: 20px;
@@ -1206,8 +1206,6 @@ h1, h2, h3, h4, h5,
 }
 
 .site-section {
-  position: relative;
-  height: 700px;
   padding: 7rem 0;
 }
 
@@ -1215,6 +1213,11 @@ h1, h2, h3, h4, h5,
   .site-section {
     padding: 3rem 0;
   }
+}
+
+.carousell {
+  position: relative;
+  height: 700px;
 }
 
 .block-heading-1 span {

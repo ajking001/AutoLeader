@@ -92,7 +92,7 @@
   animation: anim_info 500ms linear;
   animation-direction: alternate-reverse;
   animation-iteration-count: infinite;
-  color: rgba(0, 85, 255, 0.597);
+  color: blue;
   position: absolute;
   top: 50%;
   left: 20px;
@@ -101,12 +101,15 @@
 }
 
 .site-section {
-  position: relative;
-  height: 700px;
   padding: 7rem 0;
   @include media-breakpoint-down(md) {
     padding: 3rem 0;
   }
+}
+
+.carousell {
+  position: relative;
+  height: 700px;
 }
 
 .block-heading-1 {
