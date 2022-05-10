@@ -86,23 +86,34 @@
   }
 
 .info {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  animation: anim_info 500ms linear;
+  animation: anim_info 800ms linear;
   animation-direction: alternate-reverse;
   animation-iteration-count: infinite;
   color: white;
   position: absolute;
-  top: 50%;
+  top: 65%;
   left: 20px;
   z-index: 1;
   cursor: pointer;
   img{
     width: 40px;
     height: 40px;
+    &:nth-child(1){
+      position: absolute;
+    }
+    &:nth-child(2){
+      position: absolute;
+      left: 15px;
+    }
+    &:nth-child(3){
+      position: absolute;
+      left: 30px;
+    }
   }
 }
 
@@ -1130,11 +1141,11 @@
 
 @keyframes anim_info {
   0% {
-    transform: translateX(20%);
+    transform: translateX(-60%);
   }50% {
     transform: translateX(0);
   }100% {
-    transform: translateX(-20%);
+    transform: translateX(60%);
   }
 }
 
@@ -1204,7 +1215,15 @@ $pictograms: (
 
 .car-pict{
   width: 350px;
-  height: 220px;
+  &:nth-child(1){
+    height: 240px;
+  }&:nth-child(2){
+    height: 180px;
+  }&:nth-child(3){
+    height: 200px;
+  }&:nth-child(4){
+    height: 100px;
+  }
 }
 
 body {
@@ -1276,7 +1295,7 @@ body {
                     width: 50px;
                     height: 50px;
                     margin-left: 15px;
-                    background-image: get-picto-url($item);
+                    // background-image: get-picto-url($item);
                     background-position: center;
                     background-size: 75% 75%;
                     background-repeat: no-repeat;
@@ -1305,7 +1324,7 @@ body {
                   .picto {
                     height: 100px;
                     width: 100px;
-                    background-image: get-picto-url($item);
+                    // background-image: get-picto-url($item);
                     background-position: center;
                     background-size: cover;
                     background-repeat: no-repeat;

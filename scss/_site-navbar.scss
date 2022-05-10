@@ -13,6 +13,7 @@
 	.toggle-button {
 		position: absolute;
 		right: 0px;
+		
 	}
 	.site-logo {
 		margin: 0;
@@ -113,18 +114,18 @@
 							pointer-events: none;
 						}
 						&:before {
-							border-color: rgba(136, 183, 213, 0);
+							border-color: rgb(255, 0, 0);
 							border-bottom-color: $white;
 							border-width: 10px;
 							margin-left: -10px;
 						}	
 					}
-					
 
 					a {
 						// font-size: 16px;
 						text-transform: none;
 						letter-spacing: normal;
+						
 						transition: 0s all;
 						color: $black!important;
 						&.active {
@@ -445,4 +446,3 @@
 		}
 	}
 }
-

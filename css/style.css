@@ -735,7 +735,7 @@ header {
 }
 
 .site-navbar .site-navigation .site-menu .has-children .dropdown.arrow-top:before {
-  border-color: rgba(136, 183, 213, 0);
+  border-color: red;
   border-bottom-color: #fff;
   border-width: 10px;
   margin-left: -10px;
@@ -1191,8 +1191,8 @@ header {
 }
 
 .info {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 40px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1205,14 +1205,14 @@ header {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-animation: anim_info 500ms linear;
-          animation: anim_info 500ms linear;
+  -webkit-animation: anim_info 800ms linear;
+          animation: anim_info 800ms linear;
   animation-direction: alternate-reverse;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   color: white;
   position: absolute;
-  top: 50%;
+  top: 65%;
   left: 20px;
   z-index: 1;
   cursor: pointer;
@@ -1221,6 +1221,20 @@ header {
 .info img {
   width: 40px;
   height: 40px;
+}
+
+.info img:nth-child(1) {
+  position: absolute;
+}
+
+.info img:nth-child(2) {
+  position: absolute;
+  left: 15px;
+}
+
+.info img:nth-child(3) {
+  position: absolute;
+  left: 30px;
 }
 
 .site-section {
@@ -2340,31 +2354,31 @@ header {
 
 @-webkit-keyframes anim_info {
   0% {
-    -webkit-transform: translateX(20%);
-            transform: translateX(20%);
+    -webkit-transform: translateX(-60%);
+            transform: translateX(-60%);
   }
   50% {
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(-20%);
-            transform: translateX(-20%);
+    -webkit-transform: translateX(60%);
+            transform: translateX(60%);
   }
 }
 
 @keyframes anim_info {
   0% {
-    -webkit-transform: translateX(20%);
-            transform: translateX(20%);
+    -webkit-transform: translateX(-60%);
+            transform: translateX(-60%);
   }
   50% {
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(-20%);
-            transform: translateX(-20%);
+    -webkit-transform: translateX(60%);
+            transform: translateX(60%);
   }
 }
 
@@ -2414,7 +2428,22 @@ header {
 
 .car-pict {
   width: 350px;
-  height: 220px;
+}
+
+.car-pict:nth-child(1) {
+  height: 240px;
+}
+
+.car-pict:nth-child(2) {
+  height: 180px;
+}
+
+.car-pict:nth-child(3) {
+  height: 200px;
+}
+
+.car-pict:nth-child(4) {
+  height: 100px;
 }
 
 body {
@@ -2520,7 +2549,6 @@ body #scene #left-zone .list li.item input[type="radio"] ~ label.label_strawberr
   width: 50px;
   height: 50px;
   margin-left: 15px;
-  background-image: url("../images/mercedes-logo.png");
   background-position: center;
   -webkit-background-size: 75% 75%;
           background-size: 75% 75%;
@@ -2534,7 +2562,6 @@ body #scene #left-zone .list li.item input[type="radio"] ~ label.label_banana:be
   width: 50px;
   height: 50px;
   margin-left: 15px;
-  background-image: url("../images/tesla_logo_PNG16.png");
   background-position: center;
   -webkit-background-size: 75% 75%;
           background-size: 75% 75%;
@@ -2548,7 +2575,6 @@ body #scene #left-zone .list li.item input[type="radio"] ~ label.label_apple:bef
   width: 50px;
   height: 50px;
   margin-left: 15px;
-  background-image: url("../images/bmw_logo.png");
   background-position: center;
   -webkit-background-size: 75% 75%;
           background-size: 75% 75%;
@@ -2562,7 +2588,6 @@ body #scene #left-zone .list li.item input[type="radio"] ~ label.label_orange:be
   width: 50px;
   height: 50px;
   margin-left: 15px;
-  background-image: url("../images/mazda_logo.png");
   background-position: center;
   -webkit-background-size: 75% 75%;
           background-size: 75% 75%;
@@ -2603,7 +2628,6 @@ body #scene #left-zone .list li.item input[type="radio"] ~ .content {
 body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_strawberry .picto {
   height: 100px;
   width: 100px;
-  background-image: url("../images/mercedes-logo.png");
   background-position: center;
   -webkit-background-size: cover;
           background-size: cover;
@@ -2617,7 +2641,6 @@ body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_stra
 body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_banana .picto {
   height: 100px;
   width: 100px;
-  background-image: url("../images/tesla_logo_PNG16.png");
   background-position: center;
   -webkit-background-size: cover;
           background-size: cover;
@@ -2631,7 +2654,6 @@ body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_bana
 body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_apple .picto {
   height: 100px;
   width: 100px;
-  background-image: url("../images/bmw_logo.png");
   background-position: center;
   -webkit-background-size: cover;
           background-size: cover;
@@ -2645,7 +2667,6 @@ body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_appl
 body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_orange .picto {
   height: 100px;
   width: 100px;
-  background-image: url("../images/mazda_logo.png");
   background-position: center;
   -webkit-background-size: cover;
           background-size: cover;

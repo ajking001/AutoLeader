@@ -3,7 +3,8 @@ let header_box = document.querySelector(".header_box")
 let close_info = document.querySelector(".close_info")
 
 info.addEventListener("click", () => {
-    header_box.classList.add("open_info")
+    header_box.classList.toggle("open_info")
+    info.toggle()
 })
 close_info.addEventListener("click", () => {
     header_box.classList.remove("open_info")
