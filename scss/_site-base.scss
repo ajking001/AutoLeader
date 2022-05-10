@@ -125,10 +125,10 @@ h1, h2, h3, h4, h5,
 	color: rgba($white, .5);
 }
 
-.offcanvas-menu .site-wrap {
+// .offcanvas-menu .site-wrap {
 	// position: absolute;
 	// overflow: hidden;
-}
+// }
 
 .btn {
 	&.btn-outline-white {
@@ -207,6 +207,9 @@ h1, h2, h3, h4, h5,
 		font-size: 16px;
 		color: $white;
 	}
+}
+header{
+	overflow: hidden;
 }
 
 .bg-text-line {
@@ -368,7 +371,3 @@ h1, h2, h3, h4, h5,
 .top-bar {
 	border-bottom: 1px solid $gray-200!important;
 }
-
-
-
-

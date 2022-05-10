@@ -418,6 +418,10 @@ h1, h2, h3, h4, h5,
   color: #fff;
 }
 
+header {
+  overflow: hidden;
+}
+
 .bg-text-line {
   display: inline;
   background: #000;
@@ -1149,8 +1153,8 @@ h1, h2, h3, h4, h5,
 
 @-webkit-keyframes animbox {
   from {
-    -webkit-transform: translateX(-400px);
-            transform: translateX(-400px);
+    -webkit-transform: translateX(-600px);
+            transform: translateX(-600px);
   }
   to {
     -webkit-transform: translateX(0px);
@@ -1160,8 +1164,8 @@ h1, h2, h3, h4, h5,
 
 @keyframes animbox {
   from {
-    -webkit-transform: translateX(-400px);
-            transform: translateX(-400px);
+    -webkit-transform: translateX(-600px);
+            transform: translateX(-600px);
   }
   to {
     -webkit-transform: translateX(0px);
@@ -1187,7 +1191,20 @@ h1, h2, h3, h4, h5,
 }
 
 .info {
-  font-size: 50px;
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-animation: anim_info 500ms linear;
           animation: anim_info 500ms linear;
   animation-direction: alternate-reverse;
@@ -1199,6 +1216,11 @@ h1, h2, h3, h4, h5,
   left: 20px;
   z-index: 1;
   cursor: pointer;
+}
+
+.info img {
+  width: 40px;
+  height: 40px;
 }
 
 .site-section {
@@ -2318,31 +2340,31 @@ h1, h2, h3, h4, h5,
 
 @-webkit-keyframes anim_info {
   0% {
-    -webkit-transform: rotate(35deg);
-            transform: rotate(35deg);
+    -webkit-transform: translateX(20%);
+            transform: translateX(20%);
   }
   50% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   100% {
-    -webkit-transform: rotate(-35deg);
-            transform: rotate(-35deg);
+    -webkit-transform: translateX(-20%);
+            transform: translateX(-20%);
   }
 }
 
 @keyframes anim_info {
   0% {
-    -webkit-transform: rotate(35deg);
-            transform: rotate(35deg);
+    -webkit-transform: translateX(20%);
+            transform: translateX(20%);
   }
   50% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   100% {
-    -webkit-transform: rotate(-35deg);
-            transform: rotate(-35deg);
+    -webkit-transform: translateX(-20%);
+            transform: translateX(-20%);
   }
 }
 
@@ -2390,8 +2412,12 @@ h1, h2, h3, h4, h5,
   }
 }
 
+.car-pict {
+  width: 350px;
+  height: 220px;
+}
+
 body {
-  background: #eee;
   font-family: "Tahoma";
   -moz-user-select: none;
   -webkit-user-select: none;
@@ -2585,7 +2611,7 @@ body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_stra
 }
 
 body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_strawberry h1 {
-  color: #d64541;
+  color: black;
 }
 
 body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_banana .picto {
@@ -2599,7 +2625,7 @@ body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_bana
 }
 
 body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_banana h1 {
-  color: #f5d76e;
+  color: #742323;
 }
 
 body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_apple .picto {
@@ -2613,7 +2639,7 @@ body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_appl
 }
 
 body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_apple h1 {
-  color: #00b16a;
+  color: #4178a5;
 }
 
 body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_orange .picto {
@@ -2627,7 +2653,7 @@ body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_oran
 }
 
 body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_orange h1 {
-  color: #f27935;
+  color: grey;
 }
 
 body #scene #left-zone .list li.item input[type="radio"] ~ .content h1:first-letter {
@@ -2646,23 +2672,23 @@ body #scene #left-zone .list li.item input[type="radio"]:checked ~ label {
 }
 
 body #scene #left-zone .list li.item input[type="radio"]:checked ~ label.label_strawberry {
-  color: #d64541;
-  border-right: solid 4px #d64541;
+  color: black;
+  border-right: solid 4px black;
 }
 
 body #scene #left-zone .list li.item input[type="radio"]:checked ~ label.label_banana {
-  color: #f5d76e;
-  border-right: solid 4px #f5d76e;
+  color: #742323;
+  border-right: solid 4px #742323;
 }
 
 body #scene #left-zone .list li.item input[type="radio"]:checked ~ label.label_apple {
-  color: #00b16a;
-  border-right: solid 4px #00b16a;
+  color: #4178a5;
+  border-right: solid 4px #4178a5;
 }
 
 body #scene #left-zone .list li.item input[type="radio"]:checked ~ label.label_orange {
-  color: #f27935;
-  border-right: solid 4px #f27935;
+  color: grey;
+  border-right: solid 4px grey;
 }
 
 body #scene #left-zone .list li.item input[type="radio"]:checked ~ .content {
