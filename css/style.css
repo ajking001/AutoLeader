@@ -1143,11 +1143,11 @@ h1, h2, h3, h4, h5,
 .header_box {
   display: none;
   position: relative;
-  -webkit-animation: anim_box 900ms linear;
-          animation: anim_box 900ms linear;
+  -webkit-animation: animbox 900ms linear;
+          animation: animbox 900ms linear;
 }
 
-@-webkit-keyframes anim_box {
+@-webkit-keyframes animbox {
   from {
     -webkit-transform: translateX(-400px);
             transform: translateX(-400px);
@@ -1158,7 +1158,7 @@ h1, h2, h3, h4, h5,
   }
 }
 
-@keyframes anim_box {
+@keyframes animbox {
   from {
     -webkit-transform: translateX(-400px);
             transform: translateX(-400px);
@@ -1169,7 +1169,7 @@ h1, h2, h3, h4, h5,
   }
 }
 
-.header_box .close_info {
+.close_info {
   font-family: sans-serif;
   font-size: 30px;
   font-weight: 900;
@@ -1182,22 +1182,18 @@ h1, h2, h3, h4, h5,
   cursor: pointer;
 }
 
-.header_box .close_info:hover {
+.close_info:hover {
   color: red;
 }
 
-.open_info {
-  display: block;
-}
-
 .info {
-  font-size: 80px;
+  font-size: 50px;
   -webkit-animation: anim_info 500ms linear;
           animation: anim_info 500ms linear;
   animation-direction: alternate-reverse;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  color: blue;
+  color: white;
   position: absolute;
   top: 50%;
   left: 20px;
@@ -2085,38 +2081,13 @@ h1, h2, h3, h4, h5,
   margin-bottom: 30px;
 }
 
-.careers-1 .roles {
-  width: auto;
-}
-
 .open_info {
   display: block;
 }
 
 /* carrent */
-.info {
-  width: 50px;
-  position: absolute;
-  color: white;
-  font-size: 44px;
-  z-index: 9;
-  top: 55%;
-  left: 2%;
-  display: inline-block;
-  -webkit-animation-name: info;
-          animation-name: info;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  cursor: pointer;
-}
-
 .feature-car-rent-box-1 {
   position: relative;
-  display: none;
   padding: 30px;
   background: #fff;
 }
@@ -2345,56 +2316,33 @@ h1, h2, h3, h4, h5,
           border-radius: 50%;
 }
 
-<<<<<<< HEAD
-@-webkit-keyframes info {
-  from {
-    -webkit-transform: translateX(-25%);
-            transform: translateX(-25%);
-  }
-  to {
-    -webkit-transform: translateX(30%);
-            transform: translateX(30%);
-  }
-}
-
-@keyframes info {
-  from {
-    -webkit-transform: translateX(-25%);
-            transform: translateX(-25%);
-  }
-  to {
-    -webkit-transform: translateX(30%);
-            transform: translateX(30%);
-  }
-}
-=======
 @-webkit-keyframes anim_info {
   0% {
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
+    -webkit-transform: rotate(35deg);
+            transform: rotate(35deg);
   }
   50% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    -webkit-transform: rotate(-35deg);
+            transform: rotate(-35deg);
   }
 }
 
 @keyframes anim_info {
   0% {
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
+    -webkit-transform: rotate(35deg);
+            transform: rotate(35deg);
   }
   50% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    -webkit-transform: rotate(-35deg);
+            transform: rotate(-35deg);
   }
 }
 
@@ -2546,7 +2494,7 @@ body #scene #left-zone .list li.item input[type="radio"] ~ label.label_strawberr
   width: 50px;
   height: 50px;
   margin-left: 15px;
-  background-image: url("https://d30y9cdsu7xlg0.cloudfront.net/png/83067-200.png");
+  background-image: url("../images/mercedes-logo.png");
   background-position: center;
   -webkit-background-size: 75% 75%;
           background-size: 75% 75%;
@@ -2560,7 +2508,7 @@ body #scene #left-zone .list li.item input[type="radio"] ~ label.label_banana:be
   width: 50px;
   height: 50px;
   margin-left: 15px;
-  background-image: url("https://d30y9cdsu7xlg0.cloudfront.net/png/53209-200.png");
+  background-image: url("../images/tesla_logo_PNG16.png");
   background-position: center;
   -webkit-background-size: 75% 75%;
           background-size: 75% 75%;
@@ -2574,7 +2522,7 @@ body #scene #left-zone .list li.item input[type="radio"] ~ label.label_apple:bef
   width: 50px;
   height: 50px;
   margin-left: 15px;
-  background-image: url("https://d30y9cdsu7xlg0.cloudfront.net/png/14333-200.png");
+  background-image: url("../images/bmw_logo.png");
   background-position: center;
   -webkit-background-size: 75% 75%;
           background-size: 75% 75%;
@@ -2588,7 +2536,7 @@ body #scene #left-zone .list li.item input[type="radio"] ~ label.label_orange:be
   width: 50px;
   height: 50px;
   margin-left: 15px;
-  background-image: url("https://d30y9cdsu7xlg0.cloudfront.net/png/9636-200.png");
+  background-image: url("../images/mazda_logo.png");
   background-position: center;
   -webkit-background-size: 75% 75%;
           background-size: 75% 75%;
@@ -2629,7 +2577,7 @@ body #scene #left-zone .list li.item input[type="radio"] ~ .content {
 body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_strawberry .picto {
   height: 100px;
   width: 100px;
-  background-image: url("https://d30y9cdsu7xlg0.cloudfront.net/png/83067-200.png");
+  background-image: url("../images/mercedes-logo.png");
   background-position: center;
   -webkit-background-size: cover;
           background-size: cover;
@@ -2643,7 +2591,7 @@ body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_stra
 body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_banana .picto {
   height: 100px;
   width: 100px;
-  background-image: url("https://d30y9cdsu7xlg0.cloudfront.net/png/53209-200.png");
+  background-image: url("../images/tesla_logo_PNG16.png");
   background-position: center;
   -webkit-background-size: cover;
           background-size: cover;
@@ -2657,7 +2605,7 @@ body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_bana
 body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_apple .picto {
   height: 100px;
   width: 100px;
-  background-image: url("https://d30y9cdsu7xlg0.cloudfront.net/png/14333-200.png");
+  background-image: url("../images/bmw_logo.png");
   background-position: center;
   -webkit-background-size: cover;
           background-size: cover;
@@ -2671,7 +2619,7 @@ body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_appl
 body #scene #left-zone .list li.item input[type="radio"] ~ .content.content_orange .picto {
   height: 100px;
   width: 100px;
-  background-image: url("https://d30y9cdsu7xlg0.cloudfront.net/png/9636-200.png");
+  background-image: url("../images/mazda_logo.png");
   background-position: center;
   -webkit-background-size: cover;
           background-size: cover;
@@ -2747,4 +2695,3 @@ body #scene #right-zone {
       -ms-flex-positive: 3;
           flex-grow: 3;
 }
->>>>>>> b64186da263c93195206396bc2e2deeb525af9a5

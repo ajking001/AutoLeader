@@ -59,15 +59,16 @@
 .header_box {
   display: none;
   position: relative;
-  animation: anim_box 900ms linear;
+  animation: animbox 900ms linear;
 
-  @keyframes anim_box {
+}
+@keyframes animbox {
     from{
       transform: translateX(-400px);
     }to{
       transform: translateX(0px);
     }
-  }
+}
 
   .close_info {
     font-family: sans-serif;
@@ -83,16 +84,13 @@
     color: red;
     }
   }
-}
-.open_info {
-  display: block;
-}
+
 .info {
-  font-size: 80px;
+  font-size: 50px;
   animation: anim_info 500ms linear;
   animation-direction: alternate-reverse;
   animation-iteration-count: infinite;
-  color: blue;
+  color: white;
   position: absolute;
   top: 50%;
   left: 20px;
@@ -883,38 +881,33 @@
   padding: 20px;
   background: $white;
   margin-bottom: 30px;
-<<<<<<< HEAD
-  .roles{
-    width: auto;
-  }
-=======
->>>>>>> b64186da263c93195206396bc2e2deeb525af9a5
 }
 
 .open_info {
   display: block;
+  
 }
 
 
 /* carrent */
-.info{
-  width: 50px;
-  position: absolute;
-  color: white;
-  font-size: 44px;
-  z-index: 9;
-  top: 55%;
-  left: 2%;
-  display: inline-block;
-  animation-name: info;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  animation-fill-mode: forwards;
-  cursor: pointer;
-}
+// .info{
+//   width: 50px;
+//   position: absolute;
+//   color: white;
+//   font-size: 44px;
+//   z-index: 9;
+//   top: 55%;
+//   left: 2%;
+//   display: inline-block;
+//   animation-name: info;
+//   animation-duration: 1s;
+//   animation-iteration-count: infinite;
+//   animation-fill-mode: forwards;
+//   cursor: pointer;
+// }
 .feature-car-rent-box-1 {
   position: relative;
-  display: none;
+
   &:before {
     content: "";
     position: absolute;
@@ -1127,23 +1120,13 @@
   } 
 }
 
-<<<<<<< HEAD
-@keyframes info {
-    from{
-      transform: translateX(-25%);
-    }
-    to{
-      transform: translateX(30%);
-    }
-}
-=======
 @keyframes anim_info {
   0% {
-    transform: rotate(45deg);
+    transform: rotate(35deg);
   }50% {
     transform: rotate(0deg);
   }100% {
-    transform: rotate(-45deg);
+    transform: rotate(-35deg);
   }
 }
 
@@ -1165,10 +1148,10 @@ $colors: (
 );
 
 $pictograms: (
-  strawberry: url("https://d30y9cdsu7xlg0.cloudfront.net/png/83067-200.png"),
-  banana: url("https://d30y9cdsu7xlg0.cloudfront.net/png/53209-200.png"),
-  apple: url("https://d30y9cdsu7xlg0.cloudfront.net/png/14333-200.png"),
-  orange: url("https://d30y9cdsu7xlg0.cloudfront.net/png/9636-200.png")
+  strawberry: url("../images/mercedes-logo.png"),
+  banana: url("../images/tesla_logo_PNG16.png"),
+  apple: url("../images/bmw_logo.png"),
+  orange: url("../images/mazda_logo.png")
 );
 
 @function get-color($color-name) {
@@ -1378,4 +1361,3 @@ body {
     }
   }
 }
->>>>>>> b64186da263c93195206396bc2e2deeb525af9a5
