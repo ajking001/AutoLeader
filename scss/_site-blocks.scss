@@ -837,16 +837,35 @@
   padding: 20px;
   background: $white;
   margin-bottom: 30px;
-  .roles {
-
+  .roles{
+    width: auto;
   }
+}
+
+.open_info {
+  display: block;
 }
 
 
 /* carrent */
-
+.info{
+  width: 50px;
+  position: absolute;
+  color: white;
+  font-size: 44px;
+  z-index: 9;
+  top: 55%;
+  left: 2%;
+  display: inline-block;
+  animation-name: info;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+}
 .feature-car-rent-box-1 {
   position: relative;
+  display: none;
   &:before {
     content: "";
     position: absolute;
@@ -1057,4 +1076,13 @@
       border-radius: 50%;
     }
   } 
+}
+
+@keyframes info {
+    from{
+      transform: translateX(-25%);
+    }
+    to{
+      transform: translateX(30%);
+    }
 }

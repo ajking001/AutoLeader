@@ -2015,9 +2015,38 @@ h1, h2, h3, h4, h5,
   margin-bottom: 30px;
 }
 
+.careers-1 .roles {
+  width: auto;
+}
+
+.open_info {
+  display: block;
+}
+
 /* carrent */
+.info {
+  width: 50px;
+  position: absolute;
+  color: white;
+  font-size: 44px;
+  z-index: 9;
+  top: 55%;
+  left: 2%;
+  display: inline-block;
+  -webkit-animation-name: info;
+          animation-name: info;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  cursor: pointer;
+}
+
 .feature-car-rent-box-1 {
   position: relative;
+  display: none;
   padding: 30px;
   background: #fff;
 }
@@ -2244,4 +2273,26 @@ h1, h2, h3, h4, h5,
           flex: 0 0 50px;
   -webkit-border-radius: 50%;
           border-radius: 50%;
+}
+
+@-webkit-keyframes info {
+  from {
+    -webkit-transform: translateX(-25%);
+            transform: translateX(-25%);
+  }
+  to {
+    -webkit-transform: translateX(30%);
+            transform: translateX(30%);
+  }
+}
+
+@keyframes info {
+  from {
+    -webkit-transform: translateX(-25%);
+            transform: translateX(-25%);
+  }
+  to {
+    -webkit-transform: translateX(30%);
+            transform: translateX(30%);
+  }
 }
