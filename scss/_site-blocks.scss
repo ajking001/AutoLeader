@@ -1064,6 +1064,10 @@
 
 .service-1 {
   text-align: center;
+  .service-1-icon{
+    z-index: 9999;
+    color: black;
+  }
   .service-1-icon {
     background: $white;
     width: 90px;
@@ -1083,6 +1087,9 @@
   }
   .service-1-contents {
     h3, p {
+      width: 180px;
+      position: relative;
+      right: 45px;
       color: $white;
     }
     h3 {
@@ -1247,10 +1254,11 @@ body {
 
     #left-zone {
       background: get-color(white);
-      height: 75%;
+      height: 80%;
       flex-grow: 0;
       display: flex;
       width: $menu-width;
+      overflow-y: scroll;
       align-items: center;
       justify-content: left;
 
@@ -1260,7 +1268,7 @@ body {
 
         align-content: stretch;
         flex-direction: column;
-        flex-grow: 1;
+        flex-grow: 3;
 
         margin: 0;
         padding: 0;
@@ -1461,3 +1469,168 @@ body {
 //     }
 //   }
 // }
+
+
+
+// Cards Carousel
+// ----------------------------------------------
+
+.icon-cards {
+  position: relative;
+  width: 380px;
+  height: 250px;
+  margin: 0 auto; 
+  color: white;
+  transform-origin: center;
+
+	// This is the element that rotates with the animation
+
+	&__content {
+		position: absolute;
+		width: 250px;
+		height: 250px;
+    transform-origin: center;
+		transform-style: preserve-3d;
+		transform: translateZ(-30vw) rotateY(0);
+		animation: carousel 10s infinite cubic-bezier(0.77, 0, 0.175, 1) forwards;
+    
+    &.step-animation {
+      animation: carousel 8s infinite steps(1) forwards;
+    }
+	}
+
+	// Individual cards
+
+	&__item {
+		position: absolute;
+		top: 0;
+		left: 0;
+    right: 0;
+    bottom: 0;
+		width: 600px;
+		height: 40vw;
+    max-width: 380px;
+    max-height: 250px;
+    box-shadow: 0 5px 50px rgb(0, 0, 0);
+		border-radius: 6px;
+    transform-origin: center;
+    @include media-breakpoint-down(md) {
+      background: rgb(51, 127, 177);
+      left: 9px;
+      
+  .service-1-contents p{
+        left: 19px;
+        display: inline-block;
+        text-align: center;
+      }
+    }
+
+		&:nth-child(1) {
+			transform: rotateY(0) translateZ(35vw);
+      left: 25px;
+		}
+
+		&:nth-child(2) {
+			transform: rotateY(120deg) translateZ(35vw);
+      left: 35px;
+		}
+
+		&:nth-child(3) {
+			transform: rotateY(240deg) translateZ(35vw);
+      left: 45px;
+		}
+	}
+}
+
+// Carousel animation
+
+@keyframes carousel {
+	0%,  17.5%  { transform: translateZ(-35vw) rotateY(0); }
+	27.5%, 45%  { transform: translateZ(-35vw) rotateY(-120deg); }
+	55%, 72.5%  { transform: translateZ(-35vw) rotateY(-240deg); }
+	82.5%, 100% { transform: translateZ(-35vw) rotateY(-360deg); }
+}
+
+// 
+
+
+*{margin:0;padding:0;}
+a {color:inherit;text-decoration:none;}
+#wrap{
+  position:absolute;
+  left:0; top:0;
+  width:450px;
+  height:350px;
+  display:flex;
+  // align-items:stretch; 
+  // margin:0 25%;
+}
+.hb {
+  position:relative;
+  width:25%;
+  z-index:1;
+  display:flex;
+  align-items:center;
+  z-index:2;
+  transform: scale(.97);
+}
+.c{
+  position:relative;
+  display:block;
+  max-width:90%;
+}
+.c img {
+  position:relative;
+  display:block;
+  width:100%;
+  height:auto;
+  z-index:2;
+}
+.txt {
+  position:absolute;
+  top:100%; left:10%;
+  width:80%;
+  opacity:0;
+  padding:1em 0 0 1em;
+  border-left:1px solid;
+  z-index:1;
+  transform:scaleY(1) translateY(-50px);
+  transition:transform .2s, opacity .5s;
+}
+h1 {
+  font-size:1.2em;
+  font-weight:700;
+  text-transform:uppercase;
+}
+.hb:hover .txt {
+  opacity:1;
+  transform:scaleY(1) translateY(0);
+}
+.fullBg {
+  position:fixed;top:0;left:0;width:100%;height:100%;
+  opacity:0;
+  transition:transform .5s, opacity .5s;
+  transform:scale(1);
+  z-index:1;
+}
+.fullBg img {
+  width:100%;height:100%;
+  object-fit:cover;object-position:center;
+  opacity:.5;
+}
+.hb:hover + .fullBg {opacity:1;transform:scale(1.02);}
+.credits {
+  position:fixed;
+  bottom:0;right:0;
+  padding:1.5em;
+  font-size:.8em;
+  text-align:right;
+  font-style:italic;
+  opacity:.8;
+  transition:opacity .2;
+  z-index:3;
+}
+.credits:hover {
+  text-decoration:underline;
+  opacity:1;
+}

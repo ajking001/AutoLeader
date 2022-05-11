@@ -302,7 +302,12 @@
             <h2 class="text-white">Our services</h2>
           </div>
         </div>
+
         <div class="row">
+
+ <figure class="icon-cards mt-3">
+  <div class="icon-cards__content">
+    <div class="icon-cards__item d-flex align-items-center justify-content-center">
           <div class="col-lg-4">
             <div class="service-1">
               <span class="service-1-icon">
@@ -314,6 +319,8 @@
               </div>
             </div>
           </div>
+        </div>
+    <div class="icon-cards__item d-flex align-items-center justify-content-center">
           <div class="col-lg-4">
             <div class="service-1">
               <span class="service-1-icon">
@@ -325,6 +332,8 @@
               </div>
             </div>
           </div>
+        </div>
+    <div class="icon-cards__item d-flex align-items-center justify-content-center">
           <div class="col-lg-4">
             <div class="service-1">
               <span class="service-1-icon">
@@ -336,6 +345,10 @@
               </div>
             </div>
           </div>
+        </div>
+  </div>
+</figure>
+
         </div>
       </div>
     </div>
@@ -438,6 +451,58 @@
           </div>
         </div>
 
+        <!-- <div id="wrap">
+          <a href="#" class="hb">
+            <div class="c">
+              <img src="https://source.unsplash.com/user/web_tiki/2000x1300" alt=""/>
+              <div class="txt">
+                <h1>Title here</h1>
+                <p>Some longer text here thats wide enough to span on several lines.</p>
+              </div>
+            </div>
+          </a>
+          <div class="fullBg">
+            <img src="https://source.unsplash.com/user/web_tiki/2000x1300" alt=""/>
+          </div>
+          <a href="#" class="hb">
+            <div class="c">
+              <img src="https://source.unsplash.com/user/web_tiki/2000x1301" alt=""/>
+              <div class="txt">
+                <h1>Title here</h1>
+                <p>Some longer text here thats wide enough to span on several lines.</p>
+              </div>
+            </div>
+          </a>
+          <div class="fullBg">
+            <img src="https://source.unsplash.com/user/web_tiki/2000x1301" alt=""/>
+          </div>
+          <a href="#" class="hb">
+            <div class="c">
+              <img src="https://source.unsplash.com/user/web_tiki/2000x1302" alt=""/>
+              <div class="txt">
+                <h1>Title here</h1>
+                <p>Some longer text here thats wide enough to span on several lines.</p>
+              </div>
+            </div>
+          </a>
+          <div class="fullBg">
+            <img src="https://source.unsplash.com/user/web_tiki/2000x1302" alt=""/>
+          </div>
+          <a href="#" class="hb">
+            <div class="c">
+              <img src="https://source.unsplash.com/user/web_tiki/2000x1303" alt=""/>
+              <div class="txt">
+                <h1>Title here</h1>
+                <p>Some longer text here thats wide enough to span on several lines.</p>
+              </div>
+            </div>
+          </a>
+          <div class="fullBg">
+            <img src="https://source.unsplash.com/user/web_tiki/2000x1303" alt=""/>
+          </div>
+        </div>
+        <a href="https://unsplash.com/@web_tiki" class="credits">Photos by web-tiki<br/>on unsplash</a> -->
+<!-- 
         <div class="row">
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="post-entry-1 h-100">
@@ -467,7 +532,7 @@
               </div>
             </div>
           </div>
-
+          
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="post-entry-1 h-100">
               <a href="single.html">
@@ -482,10 +547,11 @@
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </div>
-
+ -->
 
 
 
@@ -558,44 +624,6 @@
       </div>
     </footer>
 
- 
-
-
-
-
-    <script type="text/javascript">
-      ymaps.ready(init);
-
-      function init() {
-          var myMap = new ymaps.Map("map", {
-                  center: [41.293190, 69.366094],
-                  zoom: 15
-              }, {
-                  searchControlProvider: 'yandex#search'
-              }),
-              objects = ymaps.geoQuery([
-                  {
-                      type: 'Point',
-                      coordinates: [41.293190, 69.366094]
-                  },
-                  {
-                      type: 'Point',
-                      coordinates: [41.292071, 69.362916]
-                  },
-                
-              ]).addToMap(myMap),
-              circle = new ymaps.Circle([[55.43, 37.7], 10000], null, { draggable: true });
-              
-          circle.events.add('drag', function () {
-              // Объекты, попадающие в круг, будут становиться красными.
-              var objectsInsideCircle = objects.searchInside(circle);
-              objectsInsideCircle.setOptions('preset', 'islands#redIcon');
-              // Оставшиеся объекты - синими.
-              objects.remove(objectsInsideCircle).setOptions('preset', 'islands#blueIcon');
-          });
-          myMap.geoObjects.add(circle);
-      }
-  </script>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
