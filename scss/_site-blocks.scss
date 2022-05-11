@@ -965,9 +965,9 @@
   padding: 40px 30px;
   background: $white;
   position: relative;
-  // transform: translateY(-50%);
   margin-top: -90px;
   box-shadow: 0 0 10px 0px rgba($black, .1);
+  background: #ffffffce;
   h3 {
     font-size: 20px;
     margin-bottom: 30px;
@@ -979,7 +979,6 @@
 .item-1 {
   .item-1-contents {
     padding: 20px;
-    background: $white;
     h3 {
       font-size: 18px;
     }
