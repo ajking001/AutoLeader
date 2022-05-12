@@ -922,8 +922,8 @@ header {
   opacity: 1;
 }
 
-body {
-  background: none;
+.open-body {
+  display: block;
 }
 
 .site-mobile-menu {
@@ -1297,8 +1297,8 @@ body {
 
 .close_info {
   font-family: sans-serif;
-  font-size: 30px;
-  font-weight: 900;
+  font-size: 37px;
+  font-weight: 500;
   position: absolute;
   left: 90%;
   bottom: 87%;
@@ -2619,7 +2619,6 @@ body #scene #left-zone {
   display: -ms-flexbox;
   display: flex;
   width: 350px;
-  overflow-y: scroll;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -3131,4 +3130,73 @@ h1 {
 .credits:hover {
   text-decoration: underline;
   opacity: 1;
+}
+
+:root {
+  --main-color: #ecf0f1;
+  --point-color: #555;
+  --size: 5px;
+}
+
+.loader {
+  background-color: var(--main-color);
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 100000;
+}
+
+.loader__element {
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  border: var(--size) solid var(--point-color);
+  margin: -webkit-calc(var(--size)*2);
+  margin: calc(var(--size)*2);
+}
+
+.loader__element:nth-child(1) {
+  -webkit-animation: preloader .6s ease-in-out alternate infinite;
+          animation: preloader .6s ease-in-out alternate infinite;
+}
+
+.loader__element:nth-child(2) {
+  -webkit-animation: preloader .6s ease-in-out alternate .2s infinite;
+          animation: preloader .6s ease-in-out alternate .2s infinite;
+}
+
+.loader__element:nth-child(3) {
+  -webkit-animation: preloader .6s ease-in-out alternate .4s infinite;
+          animation: preloader .6s ease-in-out alternate .4s infinite;
+}
+
+@-webkit-keyframes preloader {
+  100% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+}
+
+@keyframes preloader {
+  100% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
 }
