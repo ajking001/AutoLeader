@@ -86,7 +86,6 @@ function classToggle() {
   el.classList.toggle('step-animation');
 }
 
-document.querySelector('#toggle-animation').addEventListener('click', classToggle);
 
 
 // end
@@ -118,3 +117,13 @@ $(document).ready(function(){
 
 // let body = document.querySelector("#body")
 // let loader = document.querySelector(".loader")
+
+let header_cont = document.querySelector(".header_cont")
+let open_head__menu = document.querySelector(".open_head__menu")
+let open_head = document.querySelector(".open_head")
+
+open_head__menu.addEventListener("click", () => {
+  header_cont.classList.toggle("head_db")
+  open_head__menu.style.top = "100px"
+  open_head.style.transform = "rotate(180deg)"
+})

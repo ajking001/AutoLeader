@@ -747,7 +747,7 @@ header {
 }
 
 .site-navbar .site-logo a {
-  color: #fff;
+  color: grey;
 }
 
 @media (max-width: 991.98px) {
@@ -1264,6 +1264,61 @@ header {
 .site-section-cover p {
   font-size: 18px;
   color: #fff;
+}
+
+.open_head__menu {
+  width: 100px;
+  height: 50px;
+  -webkit-box-shadow: 0px 0px 30px #000;
+          box-shadow: 0px 0px 30px #000;
+  background-color: rgba(255, 255, 255, 0.574);
+  position: fixed;
+  left: 45%;
+  top: 20px;
+  z-index: 1;
+  padding-left: 25px;
+  padding-top: 5px;
+  animation: anim_head 900ms linear infinite alternate-reverse;
+  cursor: pointer;
+}
+
+@-webkit-keyframes anim_head {
+  from {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes anim_head {
+  from {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.open_head__menu .open_head {
+  font-size: 40px;
+}
+
+.head_db {
+  display: block;
+}
+
+header .container {
+  visibility: hidden;
+  -webkit-box-shadow: 0px 0px 30px #000;
+          box-shadow: 0px 0px 30px #000;
+  background-color: transparent;
+  position: fixed;
+  left: 200px;
 }
 
 .header_box {
@@ -3198,5 +3253,27 @@ h1 {
   100% {
     -webkit-transform: scale(2);
             transform: scale(2);
+  }
+}
+
+@-webkit-keyframes anim_logo {
+  from {
+    -webkit-transform: translateY(700px);
+            transform: translateY(700px);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes anim_logo {
+  from {
+    -webkit-transform: translateY(700px);
+            transform: translateY(700px);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
