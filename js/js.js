@@ -113,10 +113,15 @@ $(document).ready(function(){
 })
 
 
+<<<<<<< HEAD
+// language
+
+=======
 // loading
 
 // let body = document.querySelector("#body")
 // let loader = document.querySelector(".loader")
+<<<<<<< HEAD
 
 let header_cont = document.querySelector(".header_cont")
 let open_head__menu = document.querySelector(".open_head__menu")
@@ -127,3 +132,6 @@ open_head__menu.addEventListener("click", () => {
   open_head__menu.style.top = "100px"
   open_head.style.transform = "rotate(180deg)"
 })
+=======
+>>>>>>> ab3b8c85249ff1658e54bbbcd4cc4ec76c5b36d5
+>>>>>>> 1a8813c7c51460df66a49627def1778b484c3aa1
