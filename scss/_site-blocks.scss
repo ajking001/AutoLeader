@@ -72,7 +72,7 @@
 
   .close_info {
     font-family: sans-serif;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 900;
     position: absolute;
     left: 90%;
@@ -695,7 +695,21 @@
     }
   }
 }
-
+// language
+.change-lang{
+  width: 50px;
+  height: 20px;
+  background: scroll;
+  background-color: rgb(53, 53, 53);
+  color: #f6f5f5;
+  option{
+    background: #293c47;
+  }
+  &:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.596);
+  }
+}
 
 // owl
 .owl-all {
@@ -708,7 +722,7 @@
         display: inline-block;
         width: 7px;
         height: 7px;
-        background: #ccc;
+        color: #ccc;
         margin: 5px;
         border-radius: 50%;
       }

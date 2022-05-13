@@ -762,6 +762,7 @@ header {
 }
 
 .site-navbar .site-navigation .site-menu {
+  z-index: -999;
   margin: 0;
   padding: 0;
   margin-bottom: 0;
@@ -1297,7 +1298,7 @@ body {
 
 .close_info {
   font-family: sans-serif;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 900;
   position: absolute;
   left: 90%;
@@ -2017,6 +2018,24 @@ body {
   border-color: transparent;
 }
 
+.change-lang {
+  width: 50px;
+  height: 20px;
+  background: scroll;
+  background-color: #353535;
+  color: #f6f5f5;
+}
+
+.change-lang option {
+  background: #293c47;
+}
+
+.change-lang:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.596);
+          box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.596);
+}
+
 .owl-all .owl-dots {
   text-align: center;
   margin-top: 30px;
@@ -2030,7 +2049,7 @@ body {
   display: inline-block;
   width: 7px;
   height: 7px;
-  background: #ccc;
+  color: #ccc;
   margin: 5px;
   -webkit-border-radius: 50%;
           border-radius: 50%;
