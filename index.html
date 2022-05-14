@@ -27,8 +27,13 @@
     <link rel="stylesheet" href="css/style.css">
 
   </head>
-
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" id="body">
+
+
+    <!-- <div class="open_head__menu">
+      <ion-icon name="chevron-down-outline" class="open_head"></ion-icon>
+    </div> -->
+
 <!-- zagruzka -->
 
 <!-- <div class="loader">
@@ -58,7 +63,7 @@
 
       <header class="site-navbar site-navbar-target">
 
-        <div class="container">
+        <div class="container header_cont">
           <div class="row align-items-center position-relative">
 
             <div class="col-3 ">
@@ -83,6 +88,11 @@
                   <li><a href="about.html" class="nav-link">About</a></li>
                   <li><a href="blog.html" class="nav-link">Blog</a></li>
                   <li><a href="contact.html" class="nav-link">Contact</a></li>
+              <select class="change-lang">
+                <option value="en">EN</option>
+                <option value="ru">RU</option>
+                <option value="uz">UZ</option>
+              </select>
                 </ul>
               </nav>
             </div>
@@ -137,7 +147,7 @@
       <div class="info">
         <img src="./images/transparentt.png" alt=""><img src="./images/transparentt.png" alt=""><img src="./images/transparentt.png" alt="">
       </div>
-
+        <div class="card_ftco_car">
     <div class="ftco-blocks-cover-1">
       <div class="ftco-cover-1 overlay" style="background-image: url('images/hero_1.jpg')">
         <div class="container">
@@ -145,7 +155,7 @@
             <div class="col-lg-5">
               <div class="feature-car-rent-box-1 header_box">
                 <h3>Range Rover S7</h3>
-                <ion-icon class="close_info" name="close-outline"></ion-icon>
+                <ion-icon class="close_info"  name="close-outline"></ion-icon>
                 <ul class="list-unstyled">
                   <li>
                     <span>Doors</span>
@@ -177,6 +187,7 @@
           </div>
         </div>
       </div>
+        </div>
     </div>
 
 
@@ -283,20 +294,20 @@
       <!-- carousel car mark -->
       <div class="marquee">
         <ul class="marquee-content">
-          <li class="contnt"><img src="https://www.carlogos.org/car-logos/mercedes-benz-logo.png" alt=""></li>
-          <li class="contnt"><img src="https://www.carlogos.org/car-logos/porsche-logo.png" alt=""></li>
-          <li class="contnt"><img src="https://www.carlogos.org/car-logos/tesla-logo.png" alt=""></li>
-          <li class="contnt"><img src="https://www.carlogos.org/car-logos/toyota-logo.png" alt=""></li>
-          <li class="contnt"><img src="https://www.carlogos.org/car-logos/bmw-logo.png" alt=""></li>
-          <li class="contnt"><img src="https://www.carlogos.org/car-logos/ford-logo.png" alt=""></li>
-          <li class="contnt"><img src="https://www.carlogos.org/car-logos/mazda-logo.png" alt=""></li>
-          <li class="contnt"><img src="https://www.carlogos.org/car-logos/audi-logo.png" alt=""></li>
-          <li class="contnt"><img src="https://www.carlogos.org/car-logos/hyundai-logo.png" alt=""></li>
-          <li class="contnt"><img src="https://www.carlogos.org/car-logos/chevrolet-logo.png" alt=""></li>
-          <li class="contnt"><img src="https://www.carlogos.org/car-logos/lexus-logo.png" alt=""></li>
-          <li class="contnt"><img src="https://www.carlogos.org/car-logos/kia-logo.png" alt=""></li>
-          <li class="contnt"><img src="https://www.carlogos.org/car-logos/lada-logo.png" alt=""></li>
-          <li class="contnt"><img src="https://www.carlogos.org/car-logos/genesis-logo.png" alt=""></li>
+          <li class="contnt"><img class="contennt" src="https://www.carlogos.org/car-logos/mercedes-benz-logo.png" alt=""></li>
+          <li class="contnt"><img class="contennt" src="https://www.carlogos.org/car-logos/porsche-logo.png" alt=""></li>
+          <li class="contnt"><img class="contennt" src="https://www.carlogos.org/car-logos/tesla-logo.png" alt=""></li>
+          <li class="contnt"><img class="contennt" src="https://www.carlogos.org/car-logos/toyota-logo.png" alt=""></li>
+          <li class="contnt"><img class="contennt" src="https://www.carlogos.org/car-logos/bmw-logo.png" alt=""></li>
+          <li class="contnt"><img class="contennt" src="https://www.carlogos.org/car-logos/ford-logo.png" alt=""></li>
+          <li class="contnt"><img class="contennt" src="https://www.carlogos.org/car-logos/mazda-logo.png" alt=""></li>
+          <li class="contnt"><img class="contennt" src="https://www.carlogos.org/car-logos/audi-logo.png" alt=""></li>
+          <li class="contnt"><img class="contennt" src="https://www.carlogos.org/car-logos/hyundai-logo.png" alt=""></li>
+          <li class="contnt"><img class="contennt" src="https://www.carlogos.org/car-logos/chevrolet-logo.png" alt=""></li>
+          <li class="contnt"><img class="contennt" src="https://www.carlogos.org/car-logos/lexus-logo.png" alt=""></li>
+          <li class="contnt"><img class="contennt" src="https://www.carlogos.org/car-logos/kia-logo.png" alt=""></li>
+          <li class="contnt"><img class="contennt" src="https://www.carlogos.org/car-logos/lada-logo.png" alt=""></li>
+          <li class="contnt"><img class="contennt" src="https://www.carlogos.org/car-logos/genesis-logo.png" alt=""></li>
         </ul>
       </div>
       <!-- end car mark  -->
@@ -328,7 +339,7 @@
             </div>
           </div>
         </div>
-    <div class="icon-cards__item d-flex align-items-center justify-content-center">
+    <div class="icon-cards__item d-flex align-items-center justify-content-center" >
           <div class="col-lg-4">
             <div class="service-1">
               <span class="service-1-icon">
@@ -373,23 +384,23 @@
       </div>
       <div class="how-it-works d-flex">
         <div class="step">
-          <span class="number"><span>01</span></span>
+          <span class="number number1"><span class="numin">01</span></span>
           <span class="caption">Time &amp; Place</span>
         </div>
         <div class="step">
-          <span class="number"><span>02</span></span>
+          <span class="number number2"><span class="numin">02</span></span>
           <span class="caption">Car</span>
         </div>
         <div class="step">
-          <span class="number"><span>03</span></span>
+          <span class="number number3"><span class="numin">03</span></span>
           <span class="caption">Details</span>
         </div>
         <div class="step">
-          <span class="number"><span>04</span></span>
+          <span class="number number4"><span class="numin">04</span></span>
           <span class="caption">Checkout</span>
         </div>
         <div class="step">
-          <span class="number"><span>05</span></span>
+          <span class="number number5"><span class="numin">05</span></span>
           <span class="caption">Done</span>
         </div>
 
@@ -416,7 +427,9 @@
                 <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam. Ipsam, nam, voluptatum"</p>
               </blockquote>
               <div class="d-flex v-card align-items-center">
+                <div class="img-fu">
                 <img src="images/person_1.jpg" alt="Image" class="img-fluid mr-3">
+                </div>
                 <span>Mike Fisher</span>
               </div>
             </div>
@@ -427,7 +440,9 @@
                 <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam. Ipsam, nam, voluptatum"</p>
               </blockquote>
               <div class="d-flex v-card align-items-center">
+                <div class="img-fu">
                 <img src="images/person_2.jpg" alt="Image" class="img-fluid mr-3">
+                </div>
                 <span>Jean Stanley</span>
               </div>
             </div>
@@ -438,7 +453,9 @@
                 <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam. Ipsam, nam, voluptatum"</p>
               </blockquote>
               <div class="d-flex v-card align-items-center">
+                <div class="img-fu">
                 <img src="images/person_3.jpg" alt="Image" class="img-fluid mr-3">
+                </div>
                 <span>Katie Rose</span>
               </div>
             </div>
@@ -559,7 +576,13 @@
         </div>
       </div>
     </div>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 01d134e56242faa6ed29a0f2beef163ca3d90a58
 
+>>>>>>> 7d5b8dc33816d5726f50b414ceffca6fc62fdeeb
 
 
     <!-- footer -->
@@ -643,18 +666,11 @@
     <script src="js/bootstrap-datepicker.min.js"></script>
     <script src="./js/js.js"></script>
     <script src="js/aos.js"></script>
-    <script src="./js/abbas.js"></script>
     <script src="js/main.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
       </div>
 </body>
 
 </html>
-
-<!-- <div class="modal_logo">
-  <h1 class="modal_logo_title">
-
-  </h1>
-</div> -->
