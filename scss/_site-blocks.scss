@@ -1526,18 +1526,15 @@ body {
     }
 
 		&:nth-child(1) {
-			transform: rotateY(0) translateZ(35vw);
-      left: 25px;
+			transform: rotateY(0) translateZ(35vw) translateX(20px);
 		}
 
 		&:nth-child(2) {
-			transform: rotateY(120deg) translateZ(35vw);
-      left: 35px;
+			transform: rotateY(120deg) translateZ(35vw) translateX(68px);
 		}
 
 		&:nth-child(3) {
-			transform: rotateY(240deg) translateZ(35vw);
-      left: 45px;
+			transform: rotateY(240deg) translateZ(35vw) translateX(90px);
 		}
 	}
 }
