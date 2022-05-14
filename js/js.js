@@ -3,10 +3,10 @@ let header_box = document.querySelector(".header_box")
 let close_info = document.querySelector(".close_info")
 
 info.addEventListener("click", () => {
-    header_box.classList.add("open_info")
+    header_box.classList.toggle("open_info");
 })
 close_info.addEventListener("click", () => {
-    header_box.classList.add("close-card")
+    header_box.classList.add("close-card");
 })
 //carousel header 
 // let navLinks = document.querySelectorAll(".carousel .nav-link");
@@ -119,20 +119,14 @@ $(document).ready(function(){
 
 // let body = document.querySelector("#body")
 // let loader = document.querySelector(".loader")
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 
-let header_cont = document.querySelector(".header_cont")
-let open_head__menu = document.querySelector(".open_head__menu")
-let open_head = document.querySelector(".open_head")
 
-open_head__menu.addEventListener("click", () => {
-  header_cont.classList.toggle("head_db")
-  open_head__menu.style.top = "100px"
-  open_head.style.transform = "rotate(180deg)"
-})
-=======
->>>>>>> ab3b8c85249ff1658e54bbbcd4cc4ec76c5b36d5
->>>>>>> 1a8813c7c51460df66a49627def1778b484c3aa1
->>>>>>> 7d5b8dc33816d5726f50b414ceffca6fc62fdeeb
+// let header_cont = document.querySelector(".header_cont")
+// let open_head__menu = document.querySelector(".open_head__menu")
+// let open_head = document.querySelector(".open_head")
+
+// open_head__menu.addEventListener("click", () => {
+//   header_cont.classList.toggle("head_db")
+//   open_head__menu.style.top = "100px"
+//   open_head.style.transform = "rotate(180deg)"
+// })
