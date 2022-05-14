@@ -621,9 +621,6 @@ header {
 }
 
 .marquee {
-  width: var(--marquee-width);
-  height: var(--marquee-height);
-  background-color: #ffffff;
   color: #eee;
   margin: 0 auto;
   position: relative;
@@ -727,7 +724,7 @@ header {
 
 @media (max-width: 991.98px) {
   .site-navbar {
-    padding-top: 3rem;
+    padding-top: 2rem;
     padding-bottom: 3rem;
   }
 }
@@ -760,6 +757,7 @@ header {
 
 .site-navbar .site-navigation .site-menu .active {
   color: #007bff !important;
+  display: inline-block;
 }
 
 .site-navbar .site-navigation .site-menu a {
@@ -1311,6 +1309,12 @@ header {
 
 .close_info:hover {
   color: red;
+}
+
+.closes {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .info {
@@ -2487,6 +2491,40 @@ header {
 .testimonial-2 {
   background: #fff;
   padding: 30px;
+  -webkit-transition: 500ms;
+  -o-transition: 500ms;
+  transition: 500ms;
+}
+
+.testimonial-2:nth-child(1):hover {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+  background: #555555;
+  color: white;
+  position: absolute;
+  overflow: hidden;
+  z-index: 99;
+}
+
+.testimonial-2:nth-child(2):hover {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+  background: #555555;
+  color: white;
+  position: absolute;
+  overflow: hidden;
+  z-index: 99;
+}
+
+.testimonial-2:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+  background: #3a3636;
+  color: white;
+  cursor: pointer;
 }
 
 .testimonial-2 blockquote {
@@ -2976,7 +3014,6 @@ body #scene #right-zone {
 }
 
 .icon-cards__item:nth-child(2) {
-<<<<<<< HEAD
   -webkit-transform: rotateY(120deg) translateZ(35vw) translateX(68px);
           transform: rotateY(120deg) translateZ(35vw) translateX(68px);
 }
@@ -2984,7 +3021,6 @@ body #scene #right-zone {
 .icon-cards__item:nth-child(3) {
   -webkit-transform: rotateY(240deg) translateZ(35vw) translateX(90px);
           transform: rotateY(240deg) translateZ(35vw) translateX(90px);
-=======
   -webkit-transform: rotateY(120deg) translateZ(35vw) translateX(120px);
           transform: rotateY(120deg) translateZ(35vw) translateX(120px);
   left: 35px;
@@ -2994,7 +3030,6 @@ body #scene #right-zone {
   -webkit-transform: rotateY(240deg) translateZ(35vw) translateX(130px);
           transform: rotateY(240deg) translateZ(35vw) translateX(130px);
   left: 45px;
->>>>>>> 01d134e56242faa6ed29a0f2beef163ca3d90a58
 }
 
 @-webkit-keyframes carousel {

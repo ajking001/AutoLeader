@@ -393,9 +393,6 @@ header{
 }
 
 .marquee {
-  width: var(--marquee-width);
-  height: var(--marquee-height);
-  background-color: #ffffff;
   color: #eee;
   margin: 0 auto;
   position: relative;
@@ -427,7 +424,7 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
-  /* text-align: center; */
+  /* text-align: center; */ 
   flex-shrink: 0;
   width: var(--marquee-element-width);
   max-height: 100%;

@@ -107,11 +107,14 @@
   bottom: 87%;
   cursor: pointer;
   transition: 500ms;
+    
   &:hover {
   color: red;
   }
 }
-
+.closes{
+  transform: rotate(180deg);
+}
 .info {
   width: 30px;
   height: 40px;
@@ -930,12 +933,11 @@
     }
     .post-entry-1-contents {
       padding-top: 4rem;
-    }
+        }
 
   }
 
 }
-
 .careers-1 {
   padding: 20px;
   background: $white;
@@ -1174,6 +1176,33 @@
 .testimonial-2 {
   background: $white;
   padding: 30px;
+  transition: 500ms;
+  &:nth-child(1){
+  &:hover{
+    transform: scale(1.2);
+    background: rgb(85, 85, 85);
+    color: white;
+    position: absolute;
+    overflow: hidden;
+    z-index: 99;
+  }
+}
+  &:nth-child(2){
+  &:hover{
+    transform: scale(1.2);
+    background: rgb(85, 85, 85);
+    color: white;
+    position: absolute;
+    overflow: hidden;
+    z-index: 99;
+  }
+}
+  &:hover{
+    transform: scale(1.1);
+    background: rgb(58, 54, 54);
+    color: white;
+    cursor: pointer;
+  }
   blockquote {
     font-size: 1.3rem;
   }
@@ -1197,6 +1226,7 @@
       }
     }
   } 
+
 }
 
 @keyframes anim_info {
@@ -1584,13 +1614,11 @@ body {
 		}
 
 		&:nth-child(2) {
-<<<<<<< HEAD
 			transform: rotateY(120deg) translateZ(35vw) translateX(68px);
 		}
 
 		&:nth-child(3) {
 			transform: rotateY(240deg) translateZ(35vw) translateX(90px);
-=======
 			transform: rotateY(120deg) translateZ(35vw) translateX(120px);
       left: 35px;
 		}
@@ -1598,7 +1626,6 @@ body {
 		&:nth-child(3) {
 			transform: rotateY(240deg) translateZ(35vw) translateX(130px);
       left: 45px;
->>>>>>> 01d134e56242faa6ed29a0f2beef163ca3d90a58
 		}
 	}
 }

@@ -3,7 +3,7 @@
 	position: absolute;
 	width: 100%;
 	@include media-breakpoint-down(md) {
-		padding-top: 3rem;
+		padding-top: 2rem;
 		padding-bottom: 3rem;
 	}
 	.toggle-button {
@@ -34,8 +34,7 @@
 		.site-menu {
 			.active {
 				color: $primary!important;
-				// display: inline-block;
-				// border-bottom: 2px solid $primary;
+				display: inline-block;
 			}
 			a {
 				text-decoration: none!important;
