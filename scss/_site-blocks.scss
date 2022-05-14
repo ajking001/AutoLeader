@@ -1305,15 +1305,15 @@ $pictograms: (
 }
 
 .car-pict{
-  width: 350px;
+  width: 555px;
   &:nth-child(1){
-    height: 240px;
+    height: 400px;
   }&:nth-child(2){
-    height: 180px;
+    height: 300px;
   }&:nth-child(3){
-    height: 200px;
+    height: 400px;
   }&:nth-child(4){
-    height: 100px;
+    height: 300px;
   }
 }
 
@@ -1328,21 +1328,20 @@ body {
     display: flex;
     align-items: center;
     justify-content: left;
+    background: rgb(0, 0, 0);
 
-    width: $scene-width;
+    width: 1000px;
     height: $scene-height;
     position: absolute;
     margin: auto;
-    background-color: get-color(white);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     overflow: hidden;
+    
 
     #left-zone {
-      background: get-color(white);
       height: 80%;
       flex-grow: 0;
       display: flex;
-      width: $menu-width;
+      width: 300px;
       align-items: center;
       justify-content: left;
 
@@ -1469,17 +1468,26 @@ body {
     }
 
     #middle-border {
-      background-color: get-color(gray);
+      background-color: get-color(rgb(0, 0, 0));
       height: 75%;
       flex-grow: 1;
-      max-width: 2px;
+      max-width: 5px;
       z-index: 0;
     }
 
     #right-zone {
-      background: get-color(white);
       height: 100%;
-      flex-grow: 3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 250px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img{
+        width: 200px;
+      }
     }
   }
 }

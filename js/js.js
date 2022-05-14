@@ -4,11 +4,12 @@ let close_info = document.querySelector(".close_info")
 
 info.addEventListener("click", () => {
     header_box.classList.add("open_info");
-    info.classList.add("closes");
 })
 close_info.addEventListener("click", () => {
     header_box.classList.add("close-card");
 })
+
+
 //carousel header 
 // let navLinks = document.querySelectorAll(".carousel .nav-link");
 // let slides = document.querySelectorAll(".carousel .slides img");
