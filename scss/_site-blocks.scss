@@ -56,6 +56,42 @@
   }
 }
 
+.open_head__menu {
+  width: 100px;
+  height: 50px;
+  box-shadow: 0px 0px 30px #000;
+  background-color: rgba(255, 255, 255, 0.574);
+  position: fixed;
+  left: 45%;
+  top: 20px;
+  z-index: 1;
+  padding-left: 25px;
+  padding-top: 5px;
+  animation: anim_head 900ms linear infinite alternate-reverse;
+  cursor: pointer;
+
+  @keyframes anim_head {
+    from{transform: translateY(10px);}
+    to{transform: translateY(0);}
+  }
+
+  .open_head {
+      font-size: 40px;
+  }
+}
+
+.head_db {
+  display: block;
+}
+header {
+  .container {
+    visibility: hidden;
+    box-shadow: 0px 0px 30px #000;
+    background-color: transparent;
+    position: fixed;
+    left: 200px;
+  }
+}
 .header_box {
   display: none;
   position: relative;
@@ -1737,6 +1773,7 @@ h1 {
 @keyframes preloader {
   100% { transform: scale(2); }
 }
+<<<<<<< HEAD
 
 .close-card{
   animation: .3s ease-in .1s  reverse both running slidein;
@@ -1753,3 +1790,12 @@ h1 {
     left: -770px;
   }
 }
+=======
+@keyframes anim_logo {
+  from {
+    transform: translateY(700px);
+  }to {
+    transform: translateY(0);
+  }
+}
+>>>>>>> 7d5b8dc33816d5726f50b414ceffca6fc62fdeeb
