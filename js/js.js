@@ -6,7 +6,7 @@ info.addEventListener("click", () => {
     header_box.classList.add("open_info")
 })
 close_info.addEventListener("click", () => {
-    header_box.classList.remove("open_info")
+    header_box.classList.add("close-card")
 })
 //carousel header 
 // let navLinks = document.querySelectorAll(".carousel .nav-link");
@@ -114,12 +114,9 @@ $(document).ready(function(){
 })
 
 
-<<<<<<< HEAD
 // language
 
-=======
 // loading
 
 // let body = document.querySelector("#body")
 // let loader = document.querySelector(".loader")
->>>>>>> ab3b8c85249ff1658e54bbbcd4cc4ec76c5b36d5

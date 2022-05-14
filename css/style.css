@@ -1298,20 +1298,17 @@ header {
 
 .close_info {
   font-family: sans-serif;
-<<<<<<< HEAD
   font-size: 40px;
   font-weight: 900;
-=======
-  font-size: 37px;
+  font-size: 40px;
   font-weight: 500;
->>>>>>> ab3b8c85249ff1658e54bbbcd4cc4ec76c5b36d5
   position: absolute;
   left: 90%;
   bottom: 87%;
+  cursor: pointer;
   -webkit-transition: 500ms;
   -o-transition: 500ms;
   transition: 500ms;
-  cursor: pointer;
 }
 
 .close_info:hover {
@@ -2966,14 +2963,14 @@ body #scene #right-zone {
 }
 
 .icon-cards__item:nth-child(2) {
-  -webkit-transform: rotateY(120deg) translateZ(35vw);
-          transform: rotateY(120deg) translateZ(35vw);
+  -webkit-transform: rotateY(120deg) translateZ(35vw) translateX(120px);
+          transform: rotateY(120deg) translateZ(35vw) translateX(120px);
   left: 35px;
 }
 
 .icon-cards__item:nth-child(3) {
-  -webkit-transform: rotateY(240deg) translateZ(35vw);
-          transform: rotateY(240deg) translateZ(35vw);
+  -webkit-transform: rotateY(240deg) translateZ(35vw) translateX(130px);
+          transform: rotateY(240deg) translateZ(35vw) translateX(130px);
   left: 45px;
 }
 
@@ -3012,6 +3009,84 @@ body #scene #right-zone {
   82.5%, 100% {
     -webkit-transform: translateZ(-35vw) rotateY(-360deg);
             transform: translateZ(-35vw) rotateY(-360deg);
+  }
+}
+
+.number1 {
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  -webkit-animation: traffic 680ms linear;
+          animation: traffic 680ms linear;
+  animation-direction: alternate-reverse;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.number2 {
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  -webkit-animation: traffic 750ms linear;
+          animation: traffic 750ms linear;
+  animation-direction: alternate-reverse;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.number3 {
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  -webkit-animation: traffic 800ms linear;
+          animation: traffic 800ms linear;
+  animation-direction: alternate-reverse;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.number4 {
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  -webkit-animation: traffic 950ms linear;
+          animation: traffic 950ms linear;
+  animation-direction: alternate-reverse;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.number5 {
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  -webkit-animation: traffic 1050ms linear;
+          animation: traffic 1050ms linear;
+  animation-direction: alternate-reverse;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.numin {
+  color: #efefef;
+}
+
+@-webkit-keyframes traffic {
+  100% {
+    background: #318ead;
+  }
+}
+
+@keyframes traffic {
+  100% {
+    background: #318ead;
+  }
+}
+
+@-webkit-keyframes traffic1 {
+  100% {
+    color: #f6f5f5;
+  }
+}
+
+@keyframes traffic1 {
+  100% {
+    color: #f6f5f5;
   }
 }
 
@@ -3222,5 +3297,37 @@ h1 {
   100% {
     -webkit-transform: scale(2);
             transform: scale(2);
+  }
+}
+
+.close-card {
+  animation: .3s ease-in .1s  reverse both running slidein;
+  -webkit-animation-duration: 500ms;
+          animation-duration: 500ms;
+}
+
+@-webkit-keyframes close_card {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(-770px);
+            transform: translateX(-770px);
+    position: fixed;
+    left: -770px;
+  }
+}
+
+@keyframes close_card {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(-770px);
+            transform: translateX(-770px);
+    position: fixed;
+    left: -770px;
   }
 }

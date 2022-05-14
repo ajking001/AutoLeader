@@ -70,25 +70,21 @@
     }
 }
 
-  .close_info {
-    font-family: sans-serif;
-<<<<<<< HEAD
-    font-size: 40px;
-    font-weight: 900;
-=======
-    font-size: 37px;
-    font-weight: 500;
->>>>>>> ab3b8c85249ff1658e54bbbcd4cc4ec76c5b36d5
-    position: absolute;
-    left: 90%;
-    bottom: 87%;
-    transition: 500ms;
-    cursor: pointer;
-
-    &:hover {
-    color: red;
-    }
+.close_info {
+  font-family: sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  font-size: 40px;
+  font-weight: 500;
+  position: absolute;
+  left: 90%;
+  bottom: 87%;
+  cursor: pointer;
+  transition: 500ms;
+  &:hover {
+  color: red;
   }
+}
 
 .info {
   width: 30px;
@@ -627,7 +623,6 @@
   }
 }
 
-
 // 03-Block
 .ftco-blocks-cover-1 {
   .ftco-service-image-1 {
@@ -1115,6 +1110,8 @@
       margin-bottom: 10px;
       font-size: 20px;
     }
+    &:nth-child(2){
+    }
   }
 
   &.dark {
@@ -1550,12 +1547,12 @@ body {
 		}
 
 		&:nth-child(2) {
-			transform: rotateY(120deg) translateZ(35vw);
+			transform: rotateY(120deg) translateZ(35vw) translateX(120px);
       left: 35px;
 		}
 
 		&:nth-child(3) {
-			transform: rotateY(240deg) translateZ(35vw);
+			transform: rotateY(240deg) translateZ(35vw) translateX(130px);
       left: 45px;
 		}
 	}
@@ -1570,8 +1567,50 @@ body {
 	82.5%, 100% { transform: translateZ(-35vw) rotateY(-360deg); }
 }
 
+// animation-fill-mode: backwards;
+// animation: traffic 800ms linear;
+// animation-direction: alternate-reverse;
+// animation-iteration-count: infinite;
 // 
-
+.number1 {
+  animation-fill-mode: backwards;
+  animation: traffic 680ms linear;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+}
+.number2 {
+  animation-fill-mode: backwards;
+  animation: traffic 750ms linear;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+}
+.number3 {
+  animation-fill-mode: backwards;
+  animation: traffic 800ms linear;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+}
+.number4 {
+  animation-fill-mode: backwards;
+  animation: traffic 950ms linear;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+}
+.number5 {
+  animation-fill-mode: backwards;
+  animation: traffic 1050ms linear;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+}
+.numin{
+  color: #efefef;
+}
+@keyframes traffic {
+  100%{background: #318ead;}
+ }
+@keyframes traffic1 {
+  100%{color: #f6f5f5;}
+ }
 
 *{margin:0;padding:0;}
 a {color:inherit;text-decoration:none;}
@@ -1697,4 +1736,20 @@ h1 {
 
 @keyframes preloader {
   100% { transform: scale(2); }
+}
+
+.close-card{
+  animation: .3s ease-in .1s  reverse both running slidein;
+  animation-duration: 500ms;
+
+}
+
+@keyframes close_card{
+  from{
+    transform: translateX(0);
+  }to{
+    transform: translateX(-770px);
+    position: fixed;
+    left: -770px;
+  }
 }
