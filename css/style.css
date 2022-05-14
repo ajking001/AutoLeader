@@ -1,5 +1,246 @@
-/* Base */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700");
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 23px;
+  font-family: "Poppins", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+body .testimonial {
+  padding: 100px 0;
+}
+
+body .testimonial .row .tabs {
+  all: unset;
+  margin-right: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .testimonial .row .tabs li {
+  all: unset;
+  display: block;
+  position: relative;
+}
+
+body .testimonial .row .tabs li.active::before {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-color: #71b85f;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+
+body .testimonial .row .tabs li.active::after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-color: #71b85f;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+
+body .testimonial .row .tabs li:nth-child(1) {
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+}
+
+body .testimonial .row .tabs li:nth-child(1)::before {
+  left: 64%;
+  bottom: -50px;
+}
+
+body .testimonial .row .tabs li:nth-child(1)::after {
+  left: 97%;
+  bottom: -81px;
+}
+
+body .testimonial .row .tabs li:nth-child(1) figure img {
+  margin-left: auto;
+}
+
+body .testimonial .row .tabs li:nth-child(2) {
+  -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+          align-self: flex-start;
+}
+
+body .testimonial .row .tabs li:nth-child(2)::before {
+  right: -65px;
+  top: 50%;
+}
+
+body .testimonial .row .tabs li:nth-child(2)::after {
+  bottom: 101px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  right: -120px;
+}
+
+body .testimonial .row .tabs li:nth-child(2) figure img {
+  margin-right: auto;
+  max-width: 300px;
+  width: 100%;
+  margin-top: -50px;
+}
+
+body .testimonial .row .tabs li:nth-child(3) {
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+}
+
+body .testimonial .row .tabs li:nth-child(3)::before {
+  right: -10px;
+  top: -66%;
+}
+
+body .testimonial .row .tabs li:nth-child(3)::after {
+  top: -130px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  right: -46px;
+}
+
+body .testimonial .row .tabs li:nth-child(3) figure img {
+  margin-left: auto;
+  margin-top: -50px;
+}
+
+body .testimonial .row .tabs li:nth-child(3):focus {
+  border: 10px solid red;
+}
+
+body .testimonial .row .tabs li figure {
+  position: relative;
+}
+
+body .testimonial .row .tabs li figure img {
+  display: block;
+}
+
+body .testimonial .row .tabs li figure::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  border: 4px solid #dff9d9;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body .testimonial .row .tabs li figure:hover::after {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+body .testimonial .row .tabs.carousel-indicators li.active figure::after {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+body .testimonial .row .carousel > h3 {
+  font-size: 20px;
+  line-height: 1.45;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+body .testimonial .row .carousel h1 {
+  font-size: 40px;
+  line-height: 1.225;
+  margin-top: 23px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+body .testimonial .row .carousel .carousel-indicators {
+  all: unset;
+  padding-top: 43px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+body .testimonial .row .carousel .carousel-indicators li {
+  background: #000;
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+  height: 2px;
+}
+
+body .testimonial .row .carousel .carousel-inner .carousel-item .quote-wrapper {
+  margin-top: 42px;
+}
+
+body .testimonial .row .carousel .carousel-inner .carousel-item .quote-wrapper p {
+  font-size: 18px;
+  line-height: 1.72222;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+body .testimonial .row .carousel .carousel-inner .carousel-item .quote-wrapper h3 {
+  color: #000;
+  font-weight: 700;
+  margin-top: 37px;
+  font-size: 20px;
+  line-height: 1.45;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 1200px) {
+  body .testimonial .row .tabs {
+    margin-right: 25px;
+  }
+}
+
+/* Base */
 html {
   overflow-x: hidden;
 }
@@ -423,6 +664,14 @@ header {
   overflow: hidden;
 }
 
+header .container {
+  height: 90px;
+  margin: 0 auto;
+  -webkit-box-shadow: 0px 0px 10px #000;
+          box-shadow: 0px 0px 10px #000;
+  padding-top: 20px;
+}
+
 .bg-text-line {
   display: inline;
   background: #000;
@@ -609,7 +858,7 @@ header {
 }
 
 :root {
-  --marquee-width: 1140px;
+  --marquee-width: 1200px;
   --marquee-height: 150px;
   /* --marquee-elements: 12; */
   /* defined with JavaScript */
@@ -621,7 +870,7 @@ header {
 }
 
 .marquee {
-  color: #eee;
+  background-color: #f7f7f7;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
@@ -635,6 +884,7 @@ header {
   height: 100%;
   content: "";
   z-index: 1;
+  bottom: 80px;
 }
 
 .marquee-content {
@@ -691,9 +941,6 @@ header {
           flex-shrink: 0;
   width: var(--marquee-element-width);
   max-height: 100%;
-  font-size: -webkit-calc(var(--marquee-height)*3/4);
-  font-size: calc(var(--marquee-height)*3/4);
-  /* 5rem; */
   white-space: nowrap;
 }
 
