@@ -395,14 +395,10 @@
 }
 
 .post-entry {
-  background: $white;
   padding: 30px;
   border: 1px solid lighten($black, 90%);
   border-radius: 4px;
   transition: .3s all ease;
-  &:hover {
-    box-shadow: 0 5px 15px -5px rgba(0, 0, 0, .1);
-  }
   h2 {
     font-size: 20px;
   }
