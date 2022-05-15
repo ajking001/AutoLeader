@@ -10,6 +10,14 @@ close_info.addEventListener("click", () => {
 })
 
 
+// burger
+let btn = $('.btn');
+
+btn.on('click', function() {
+  $(this).toggleClass('active');
+  $(this).toggleClass('not-active');
+});
+
 //carousel header 
 // let navLinks = document.querySelectorAll(".carousel .nav-link");
 // let slides = document.querySelectorAll(".carousel .slides img");
@@ -132,5 +140,3 @@ $(document).ready(function(){
 //   open_head__menu.style.top = "100px"
 //   open_head.style.transform = "rotate(180deg)"
 // })
-
-

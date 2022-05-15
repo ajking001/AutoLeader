@@ -9,12 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=DM+Sans:300,400,700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="fonts/icomoon/style.css">
-  
-    <!-- abbas map  -->
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=Your API key&lang=en_US" type="text/javascript">
-    </script>
-
-
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
@@ -22,7 +17,7 @@
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
     <link rel="stylesheet" href="css/aos.css">
-<link rel="stylesheet" href="./css//Abbas.css">
+    <link rel="stylesheet" href="./css/burger.css">
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -30,9 +25,6 @@
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" id="body">
 
 
-    <!-- <div class="open_head__menu">
-      <ion-icon name="chevron-down-outline" class="open_head"></ion-icon>
-    </div> -->
 
 <!-- zagruzka -->
 
@@ -43,23 +35,20 @@
 </div> -->
 
 
-
-
-      <div class="wrapper">
         
   <!-- <header -->
     <div class="site-wrap" id="home-section">
 
       <div class="site-mobile-menu site-navbar-target">
         <div class="site-mobile-menu-header">
-          <div class="site-mobile-menu-close mt-3">
-            <span class="icon-close2 js-menu-toggle"></span>
+          <div class="site-mobile-menu-close mt-3" >
+            <ion-icon class="icon-menu js-menu-toggle  h3 text-white"  name="close-outline"></ion-icon>
           </div>
         </div>
         <div class="site-mobile-menu-body"></div>
       </div>
 
-
+      
 
       <header class="site-navbar site-navbar-target">
 
@@ -74,8 +63,25 @@
             <div class="col-9  text-right">
               
 
-              <span class="d-inline-block d-lg-none"><a href="#" class="text-white site-menu-toggle js-menu-toggle py-5 text-white"><span class="icon-menu h3 text-white"></span></a></span>
+              <span class="d-inline-block d-lg-none"><span  class="text-white site-menu-toggle js-menu-toggle py-5 text-white"><ion-icon class="icon-menu h3 text-white" style="font-size: 40px; top: 15px;" name="menu-outline"></ion-icon></span></span>
 
+
+
+<nav class="menu">
+  <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
+  <label class="menu-open-button" for="menu-open">
+    <span class="hamburger hamburger-1"></span>
+    <span class="hamburger hamburger-2"></span>
+    <span class="hamburger hamburger-3"></span>
+  </label>
+  
+  <a href="./contact.html" class="menu-item"><i class="fa-solid fa-phone"></i></a>
+  <a href="./services.html" class="menu-item"><i class="fa-solid fa-screwdriver-wrench"></i></a>
+  <a href="./cars.html" class="menu-item"><i class="fa-solid fa-car"></i></a>
+  <a href="./blog.html" class="menu-item"><i class="fa-solid fa-blog"></i></a>
+  <a href="./index.html" class="menu-item"><i class="fa-solid fa-house"></i></a>
+
+</nav>
 
 
               <!-- navbar -->
@@ -141,7 +147,7 @@
       <div class="info">
         <img src="./images/transparentt.png" alt=""><img src="./images/transparentt.png" alt=""><img src="./images/transparentt.png" alt="">
       </div>
-        <div class="card_ftco_car">
+    <div class="card_ftco_car">
     <div class="ftco-blocks-cover-1">
       <div class="ftco-cover-1 overlay" style="background-image: url('images/hero_1.jpg')">
         <div class="container">
@@ -184,8 +190,7 @@
         </div>
     </div>
 
-
-
+  
     <div class="site-section pt-0 pb-0 bg-light">
       <div class="container">
         <div class="row">
@@ -230,13 +235,11 @@
     </div>
 
 
-
-
     <!-- carousel -->
 
-    <div class="site-section carousell bg-light">
-      <div class="container">
-        <h3>Our cars</h3>
+    <div class="site-section   carousell bg-light">
+      <div class="container some_cars">
+        <h3>Some of our car</h3>
         <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure nesciunt nemo vel earum maxime neque!</p>
          <div id="scene">
     <div id="left-zone">
@@ -245,7 +248,7 @@
           <input type="radio" id="radio_The garden strawberry (or simply strawberry /ˈstrɔːbᵊri/; Fragaria × ananassa) is a widely grown hybrid species of the genus Fragaria (collectively known as the strawberries)" name="basic_carousel" value="The garden strawberry (or simply strawberry /ˈstrɔːbᵊri/; Fragaria × ananassa) is a widely grown hybrid species of the genus Fragaria (collectively known as the strawberries)" checked="checked"/>
           <label class="label_strawberry" for="radio_The garden strawberry (or simply strawberry /ˈstrɔːbᵊri/; Fragaria × ananassa) is a widely grown hybrid species of the genus Fragaria (collectively known as the strawberries)">Mersedez-Benz</label>
           <div class="content content_strawberry">
-            <img src="https://quto.ru/service-imgs/5f/44/bd/cd/5f44bdcd6d221.jpeg" alt="" class="car-pict">
+            <img src="https://o.remove.bg/downloads/97219bc6-8b2d-4f4c-87fd-0339073f1d16/5f44bdcd6d221-removebg-preview.png" alt="" class="car-pict">
             <h1>Mersedez-Benz</h1>
             <p>Exclusive reports and current films: experience a broad range of topics from the fascinating world of Mercedes-Benz.</p>
           </div>
@@ -254,7 +257,7 @@
           <input type="radio" id="radio_A banana is an edible fruit, botanically a berry, produced by several kinds of large herbaceous flowering plants in the genus Musa." name="basic_carousel" value="A banana is an edible fruit, botanically a berry, produced by several kinds of large herbaceous flowering plants in the genus Musa."/>
           <label class="label_banana" for="radio_A banana is an edible fruit, botanically a berry, produced by several kinds of large herbaceous flowering plants in the genus Musa.">Tesla</label>
           <div class="content content_banana">
-            <img src="https://tesla-cdn.thron.com/delivery/public/image/tesla/03c34975-991c-45ee-a340-2b700bf7de01/bvlatuR/std/960x540/meet-your-tesla_model-s" alt="" class="car-pict">
+            <img src="https://o.remove.bg/downloads/e5ef7b1c-74c3-4f76-b71a-9cd5090ab620/meet-your-tesla_model-s-removebg-preview.png" alt="" class="car-pict">
             <h1>Tesla</h1>
             <p>Tesla (formerly Tesla Motors) is an American electric vehicle and solutions company.</p>
           </div>
@@ -263,7 +266,7 @@
           <input type="radio" id="radio_The apple tree (Malus domestica) is a deciduous tree in the rose family best known for its sweet, pomaceous fruit, the apple. It is cultivated worldwide as a fruit tree, and is the most widely grown species in the genus Malus." name="basic_carousel" value="The apple tree (Malus domestica) is a deciduous tree in the rose family best known for its sweet, pomaceous fruit, the apple. It is cultivated worldwide as a fruit tree, and is the most widely grown species in the genus Malus."/>
           <label class="label_apple" for="radio_The apple tree (Malus domestica) is a deciduous tree in the rose family best known for its sweet, pomaceous fruit, the apple. It is cultivated worldwide as a fruit tree, and is the most widely grown species in the genus Malus.">BMW</label>
           <div class="content content_apple">
-            <img src="https://quto.ru/service-imgs/62/14/83/9e/6214839ecfb2c.jpeg" alt="" class="car-pict">
+            <img src="https://o.remove.bg/downloads/60103d4a-b8b3-4bef-af14-e8aaa4bcf5ce/6214839ecfb2c-removebg-preview.png" alt="" class="car-pict">
             <h1>BMW</h1>
             <p>BMW cars - choose your BMW on the official website. Information about promotions, novelties and prices of BMW in Russia.</p>
           </div>
@@ -272,8 +275,8 @@
           <input type="radio" id="radio_The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae." name="basic_carousel" value="The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae."/>
           <label class="label_orange" for="radio_The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae.">Mazda</label>
           <div class="content content_orange">
-            <img src="https://cdn.atlantm.com/static/multifile/326/2136/mazda6_active_jet_black_1n.png " alt="" class="car-pict">
-            <h1>Mazda</h1>
+            <img src="https://o.remove.bg/downloads/5a05e0e9-4385-4055-8693-f09ddb616712/mazda6_active_jet_black_1n-removebg-preview.png" alt="" class="car-pict">
+            <h1>mazda</h1>
             <p>Feedback from car owners, the cost of owning a car and test drives of new products in the automotive industry. Mazda.</p>
           </div>
         </li>
@@ -283,7 +286,6 @@
     <div id="right-zone"></div>
   </div>
       </div>
-    </div>
 
       <!-- carousel car mark -->
       <div class="marquee">
@@ -297,7 +299,6 @@
           <li class="contnt"><img class="contennt" src="https://www.carlogos.org/car-logos/mazda-logo.png" alt=""></li>
           <li class="contnt"><img class="contennt" src="https://www.carlogos.org/car-logos/audi-logo.png" alt=""></li>
           <li class="contnt"><img class="contennt" src="https://www.carlogos.org/car-logos/hyundai-logo.png" alt=""></li>
-          <li class="contnt"><img class="contennt" src="https://www.carlogos.org/car-logos/chevrolet-logo.png" alt=""></li>
           <li class="contnt"><img class="contennt" src="https://www.carlogos.org/car-logos/lexus-logo.png" alt=""></li>
           <li class="contnt"><img class="contennt" src="https://www.carlogos.org/car-logos/kia-logo.png" alt=""></li>
           <li class="contnt"><img class="contennt" src="https://www.carlogos.org/car-logos/lada-logo.png" alt=""></li>
@@ -311,7 +312,32 @@
           <li class="contnt"><img class="contennt" src="https://www.carlogos.org/car-logos/mazda-logo.png" alt=""></li>
           <li class="contnt"><img class="contennt" src="https://www.carlogos.org/car-logos/audi-logo.png" alt=""></li>
           <li class="contnt"><img class="contennt" src="https://www.carlogos.org/car-logos/hyundai-logo.png" alt=""></li>
-          <li class="contnt"><img class="contennt" src="https://www.carlogos.org/car-logos/chevrolet-logo.png" alt=""></li>
+          <li class="contnt"><img class="contennt" src="https://www.carlogos.org/car-logos/lexus-logo.png" alt=""></li>
+          <li class="contnt"><img class="contennt" src="https://www.carlogos.org/car-logos/kia-logo.png" alt=""></li>
+          <li class="contnt"><img class="contennt" src="https://www.carlogos.org/car-logos/lada-logo.png" alt=""></li>
+          <li class="contnt"><img class="contennt" src="https://www.carlogos.org/car-logos/genesis-logo.png" alt=""></li>
+          <li class="contnt"><img class="contennt" src="https://www.carlogos.org/car-logos/mercedes-benz-logo.png" alt=""></li>
+          <li class="contnt"><img class="contennt" src="https://www.carlogos.org/car-logos/porsche-logo.png" alt=""></li>
+          <li class="contnt"><img class="contennt" src="https://www.carlogos.org/car-logos/tesla-logo.png" alt=""></li>
+          <li class="contnt"><img class="contennt" src="https://www.carlogos.org/car-logos/toyota-logo.png" alt=""></li>
+          <li class="contnt"><img class="contennt" src="https://www.carlogos.org/car-logos/bmw-logo.png" alt=""></li>
+          <li class="contnt"><img class="contennt" src="https://www.carlogos.org/car-logos/ford-logo.png" alt=""></li>
+          <li class="contnt"><img class="contennt" src="https://www.carlogos.org/car-logos/mazda-logo.png" alt=""></li>
+          <li class="contnt"><img class="contennt" src="https://www.carlogos.org/car-logos/audi-logo.png" alt=""></li>
+          <li class="contnt"><img class="contennt" src="https://www.carlogos.org/car-logos/hyundai-logo.png" alt=""></li>
+          <li class="contnt"><img class="contennt" src="https://www.carlogos.org/car-logos/lexus-logo.png" alt=""></li>
+          <li class="contnt"><img class="contennt" src="https://www.carlogos.org/car-logos/kia-logo.png" alt=""></li>
+          <li class="contnt"><img class="contennt" src="https://www.carlogos.org/car-logos/lada-logo.png" alt=""></li>
+          <li class="contnt"><img class="contennt" src="https://www.carlogos.org/car-logos/genesis-logo.png" alt=""></li>
+          <li class="contnt"><img class="contennt" src="https://www.carlogos.org/car-logos/mercedes-benz-logo.png" alt=""></li>
+          <li class="contnt"><img class="contennt" src="https://www.carlogos.org/car-logos/porsche-logo.png" alt=""></li>
+          <li class="contnt"><img class="contennt" src="https://www.carlogos.org/car-logos/tesla-logo.png" alt=""></li>
+          <li class="contnt"><img class="contennt" src="https://www.carlogos.org/car-logos/toyota-logo.png" alt=""></li>
+          <li class="contnt"><img class="contennt" src="https://www.carlogos.org/car-logos/bmw-logo.png" alt=""></li>
+          <li class="contnt"><img class="contennt" src="https://www.carlogos.org/car-logos/ford-logo.png" alt=""></li>
+          <li class="contnt"><img class="contennt" src="https://www.carlogos.org/car-logos/mazda-logo.png" alt=""></li>
+          <li class="contnt"><img class="contennt" src="https://www.carlogos.org/car-logos/audi-logo.png" alt=""></li>
+          <li class="contnt"><img class="contennt" src="https://www.carlogos.org/car-logos/hyundai-logo.png" alt=""></li>
           <li class="contnt"><img class="contennt" src="https://www.carlogos.org/car-logos/lexus-logo.png" alt=""></li>
           <li class="contnt"><img class="contennt" src="https://www.carlogos.org/car-logos/kia-logo.png" alt=""></li>
           <li class="contnt"><img class="contennt" src="https://www.carlogos.org/car-logos/lada-logo.png" alt=""></li>
@@ -321,8 +347,10 @@
       <!-- end car mark  -->
 
 
+</div>
+
     <!-- Our services -->
-    <div class="site-section section-3" style="background-image: url('images/hero_2.jpg');">
+    <div class="site-section section-3">
       <div class="container">
         <div class="row">
           <div class="col-12 text-center mb-5">
@@ -338,7 +366,9 @@
           <div class="col-lg-4">
             <div class="service-1">
               <span class="service-1-icon">
-                <span class="flaticon-car-1"></span>
+                <span class="service-1-icon">
+                  <img src="https://cdn-icons.flaticon.com/png/512/2822/premium/2822686.png?token=exp=1652546096~hmac=03c6958e197517982d491d927e68e574" style="width: 58px; height: 55px; position: absolute; top: 11px; left: 13px;" alt="">
+                </span>
               </span>
               <div class="service-1-contents">
                 <h3>Repair</h3>
@@ -351,7 +381,9 @@
           <div class="col-lg-4">
             <div class="service-1">
               <span class="service-1-icon">
-                <span class="flaticon-traffic"></span>
+                <span class="service-1-icon">
+                  <img src="https://cdn-icons.flaticon.com/png/512/2962/premium/2962303.png?token=exp=1652546096~hmac=5e5460afbf063c073c11cd77ab414759"  style="width: 60px; height: 55px; position: absolute; top: 10px; left: 13px;"  alt="">
+                </span>
               </span>
               <div class="service-1-contents">
                 <h3>Car Accessories</h3>
@@ -364,7 +396,9 @@
           <div class="col-lg-4">
             <div class="service-1">
               <span class="service-1-icon">
-                <span class="flaticon-valet"></span>
+                <span class="service-1-icon">
+                  <img src="https://cdn-icons-png.flaticon.com/512/1441/1441242.png"  style="width: 58px; height: 55px; position: absolute; top: 12px; left: 15px;"  alt="">
+                </span>
               </span>
               <div class="service-1-contents">
                 <h3>Own a Car</h3>
@@ -383,7 +417,7 @@
 
 
     <!-- How it works -->
-    <div class="container site-section mb-5">
+    <div class="container how-it-works1 site-section mb-5">
       <div class="row justify-content-center text-center">
         <div class="col-7 text-center mb-5">
           <h2>How it works</h2>
@@ -475,7 +509,7 @@
 
     <!-- Our Blog -->
 
-    <div class="site-section bg-white">
+    <div class="site-section bg-white" style="background-image: url();">
       <div class="container">
         <div class="row justify-content-center text-center mb-5">
           <div class="col-7 text-center mb-5">
@@ -670,6 +704,7 @@
     <script src="js/main.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://kit.fontawesome.com/2d808759a2.js" crossorigin="anonymous"></script>
 
       </div>
 </body>

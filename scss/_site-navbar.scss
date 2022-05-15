@@ -2,7 +2,7 @@
 	z-index: 1999;
 	position: absolute;
 	width: 100%;
-	@include media-breakpoint-down(md) {
+	@include media-breakpoint-down(md) { 
 		padding-top: 2rem;
 		padding-bottom: 3rem;
 	}
