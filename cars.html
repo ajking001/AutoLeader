@@ -120,7 +120,7 @@
         <div class="row">
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="item-1">
-                <a href="#"><img src="images/img_1.jpg" alt="Image" class="img-fluid"></a>
+                <a href="#"><img src="https://cdn.motor1.com/images/mgl/1AVNK/s1/land-rover-range-rover-sv-coupe-geneva-2018.jpg" alt="Image" class="img-fluid"></a>
                 <div class="item-1-contents">
                   <div class="text-center">
                   <h3><a href="#">Range Rover S64 Coupe</a></h3>
@@ -160,7 +160,7 @@
 
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="item-1">
-                <a href="#"><img src="images/img_2.jpg" alt="Image" class="img-fluid"></a>
+                <a href="#"><img src="https://????????.???/wp-content/uploads/2021/07/BMW-X7-Wald-001-1280x720.jpg" alt="Image" class="img-fluid"></a>
                 <div class="item-1-contents">
                   <div class="text-center">
                   <h3><a href="#">Range Rover S64 Coupe</a></h3>
@@ -474,6 +474,39 @@
 
     </div>
 
+    <script type="text/javascript">
+      ymaps.ready(init);
+
+      function init() {
+          var myMap = new ymaps.Map("map", {
+                  center: [41.293190, 69.366094],
+                  zoom: 15
+              }, {
+                  searchControlProvider: 'yandex#search'
+              }),
+              objects = ymaps.geoQuery([
+                  {
+                      type: 'Point',
+                      coordinates: [41.293190, 69.366094]
+                  },
+                  {
+                      type: 'Point',
+                      coordinates: [41.292071, 69.362916]
+                  },
+                
+              ]).addToMap(myMap),
+              circle = new ymaps.Circle([[55.43, 37.7], 10000], null, { draggable: true });
+              
+          circle.events.add('drag', function () {
+              // Объекты, попадающие в круг, будут становиться красными.
+              var objectsInsideCircle = objects.searchInside(circle);
+              objectsInsideCircle.setOptions('preset', 'islands#redIcon');
+              // Оставшиеся объекты - синими.
+              objects.remove(objectsInsideCircle).setOptions('preset', 'islands#blueIcon');
+          });
+          myMap.geoObjects.add(circle);
+      }
+  </script>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

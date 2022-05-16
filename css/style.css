@@ -1762,6 +1762,10 @@ h1 {
   cursor: pointer;
 }
 
+.info:hover{
+  animation:none; 
+  left: 15px;
+}
 .info img {
   width: 40px;
   height: 40px;
@@ -2776,9 +2780,12 @@ h1 {
   border-bottom: none;
 }
 
-.item-1 .item-1-contents .action {
-  margin-top: 20px;
+.item-1 .item-1-contents .action a {
+  top: 420px;
+  width: 90px;
+  height: 30px;
 }
+
 
 /* .how-it-works1 {
   background-image: url(https://previews.123rf.com/images/bigtunaonline/bigtunaonline1801/bigtunaonline180100274/94463643-blurred-dealership-store-bokeh-background-cars-soft-lightning-blur-bokeh-transportation-concept-deal.jpg);
