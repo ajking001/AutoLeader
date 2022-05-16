@@ -2785,7 +2785,14 @@ h1 {
 .item-1 .item-1-contents ul li:last-child {
   border-bottom: none;
 }
-
+.img-fluid:nth-child(1){
+  width: 300px;
+  height: 200px;
+}
+.img-fluid:nth-child(2){
+  width: 150px;
+  height: 200px;
+}
 .item-1 .item-1-contents .action a {
   width: 90px;
   height: 30px;
