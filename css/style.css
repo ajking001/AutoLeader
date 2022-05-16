@@ -912,6 +912,9 @@ h1 {
   transform: translate3d(0, -8px, 0);
 }
 
+.menu:hover .hamburger-1{
+  transform: rotate(-90deg);
+}
 .hamburger-2 {
   transform: translate3d(0, 0, 0);
 }
@@ -920,6 +923,9 @@ h1 {
   transform: translate3d(0, 8px, 0);
 }
 
+.menu:hover .hamburger-3{
+  transform: rotate(90deg);
+}
 .menu-open:checked + .menu-open-button .hamburger-1 {
   transform: translate3d(0, 0, 0) rotate(45deg);
 }
@@ -931,12 +937,12 @@ h1 {
 }
 
 .menu {
-  width: 350px;
-  height: 250px;
+  width: 50px;
+  height: 50px;
   position: fixed;
   right: 60px;
   transform: rotate(90deg);
-  top: 55%;
+  top: 65%;
   z-index: 999999999;
 
   
@@ -2781,9 +2787,10 @@ h1 {
 }
 
 .item-1 .item-1-contents .action a {
-  top: 420px;
   width: 90px;
   height: 30px;
+  top: 430px;
+  right: 0;
 }
 
 
