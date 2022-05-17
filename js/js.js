@@ -130,7 +130,6 @@ $(document).ready(function(){
 // let body = document.querySelector("#body")
 // let loader = document.querySelector(".loader")
 
-
 // let header_cont = document.querySelector(".header_cont")
 // let open_head__menu = document.querySelector(".open_head__menu")
 // let open_head = document.querySelector(".open_head")
