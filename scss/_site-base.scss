@@ -210,6 +210,13 @@ h1, h2, h3, h4, h5,
 }
 header{
 	overflow: hidden;
+
+	.container {
+		height: 90px;
+		margin: 0 auto;
+		box-shadow: 0px 0px 10px #000;
+		padding-top: 20px;
+	}
 }
 
 .bg-text-line {
@@ -352,7 +359,7 @@ header{
 		}
 	}
 }
-
+ 
 .select-wrap, .wrap-icon {
 	position: relative;
 	.icon {
@@ -384,7 +391,7 @@ header{
 }
 
 :root {
-  --marquee-width: 1140px;
+  --marquee-width: 1200px;
   --marquee-height: 150px;
   /* --marquee-elements: 12; */ /* defined with JavaScript */
   --marquee-elements-displayed: 5;
@@ -393,7 +400,7 @@ header{
 }
 
 .marquee {
-  color: #eee;
+	background-color: #f7f7f7;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
@@ -406,6 +413,7 @@ header{
   height: 100%;
   content: "";
   z-index: 1;
+  bottom: 80px;
 }
 .marquee-content {
   list-style: none;
@@ -428,7 +436,7 @@ header{
   flex-shrink: 0;
   width: var(--marquee-element-width);
   max-height: 100%;
-  font-size: calc(var(--marquee-height)*3/4); /* 5rem; */
+//   font-size: calc(var(--marquee-height)*3/4); /* 5rem; */
   white-space: nowrap;
 }
 
