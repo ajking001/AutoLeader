@@ -2863,7 +2863,7 @@ h1 {
   width: 250px;
   height: 250px;
   text-align: center;
-  padding-left: 78px;
+  transition: 700ms;
 }
 .service-1 .service-1-icon {
   z-index: 9999;
@@ -2884,12 +2884,13 @@ h1 {
 }
 
 .service-1:hover {
-  transition: .5s;
   width: 250px;
   padding-top: 15px;
   transform: scale(1.2);
   border: 2px solid #718093;
   background: #dcdde1;
+  padding-left: 78px;
+  height: auto;
 }
 
 .service-1 .service-1-icon > span {
