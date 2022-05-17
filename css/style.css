@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700");
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -1156,7 +1157,7 @@ h1 {
 }
 
 .site-navbar .site-logo a {
-  color: grey;
+  color: rgb(255, 255, 255);
 }
 
 @media (max-width: 991.98px) {
@@ -1435,7 +1436,7 @@ h1 {
 }
 
 .site-mobile-menu .site-nav-wrap a:hover {
-  color: #007bff;
+  color: #3498db;
 }
 
 .site-mobile-menu .site-nav-wrap li {
@@ -1444,11 +1445,12 @@ h1 {
 }
 
 .site-mobile-menu .site-nav-wrap li .nav-link.active {
-  color: #007bff;
+  color: #3498db;
 }
 
 .site-mobile-menu .site-nav-wrap li.active > a {
-  color: #007bff;
+  color: #3498db;
+  font-size: 24px;
 }
 
 .site-mobile-menu .site-nav-wrap .arrow-collapse {
