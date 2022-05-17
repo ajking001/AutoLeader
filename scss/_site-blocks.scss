@@ -149,7 +149,6 @@
 
 .site-section {
   padding: 7rem 0;
-  background-image: url(https://bennewman.net/wp-content/uploads/2016/01/BannerPhoto.jpg);
   @include media-breakpoint-down(md) {
     padding: 3rem 0;
   }
@@ -635,6 +634,10 @@
     }
   }
 }
+
+
+
+
 .footer-suscribe-form {
   .form-control {
     color: $black;
@@ -672,7 +675,7 @@
       min-height: 700px;
     }
   }
-// https://bennewman.net/wp-content/uploads/2016/01/BannerPhoto.jpg
+
   >.container {
     position: relative;
   }
@@ -1003,10 +1006,11 @@
 
 .trip-form {
   padding: 40px 30px;
+  background: $white;
   position: relative;
   margin-top: -90px;
   box-shadow: 0 0 10px 0px rgba($black, .1);
-  background: #414141;
+  background: #ffffffce;
   h3 {
     font-size: 20px;
     margin-bottom: 30px;
@@ -1100,26 +1104,29 @@
     }
   }
 }
-  .service-1-icon {
- background: $white;
- width: 90px;
- height: 90px;
- position: relative;
- border: 4px solid $primary;
- border-radius: 50%;
- img{
-   
- &:hover{
-   cursor: pointer;
- }
- }
-  }
 
 .service-1 {
   text-align: center;
   .service-1-icon{
     z-index: 9999;
     color: black;
+  }
+  .service-1-icon {
+    background: $white;
+    width: 90px;
+    height: 90px;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    border: 4px solid $primary;
+    border-radius: 50%;
+    > span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 3rem;
+    }
   }
   .service-1-contents {
     h3, p {
@@ -1146,7 +1153,7 @@
     }
   }
 }
- 
+
 .section-3 {
   background-size: cover;
   background-position: center;
@@ -1555,6 +1562,8 @@ body {
 //   }
 // }
 
+
+
 // Cards Carousel
 // ----------------------------------------------
 
@@ -1563,6 +1572,7 @@ body {
   width: 380px;
   height: 250px;
   margin: 0 auto; 
+  color: white;
   transform-origin: center;
 
 	// This is the element that rotates with the animation
@@ -1790,7 +1800,7 @@ h1 {
   margin: calc(var(--size)*2);
 }
 
-.loader__element:nth-child(1) { 
+.loader__element:nth-child(1) {
   animation: preloader .6s ease-in-out alternate infinite;
 }
 .loader__element:nth-child(2) {
